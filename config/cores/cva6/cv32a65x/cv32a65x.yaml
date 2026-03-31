@@ -13,6 +13,8 @@ implemented_extensions:
   - { name: Zbb, version: "= 1.0.0" }
   - { name: Zbs, version: "= 1.0.0" }
   - { name: Zca, version: "= 1.0.0" }
+  - { name: Zbc, version: "= 1.0.0" }
+  - { name: Zcb, version: "= 1.0.0" }
   - { name: Zicsr, version: "= 2.0" }
   - { name: Sm, version: "= 1.12.0" }
 
@@ -33,7 +35,7 @@ params:
   TRAP_ON_ECALL_FROM_M: true
   TRAP_ON_EBREAK: true
   MISALIGNED_LDST: false
-  
+
   # Exceptions & Traps(precise in-order pipeline)
   PRECISE_SYNCHRONOUS_EXCEPTIONS: true
   MTVAL_WIDTH: 0                  # TvalEn=False -> hardwired zero
