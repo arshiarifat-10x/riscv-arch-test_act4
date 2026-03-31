@@ -46,10 +46,8 @@ RVTEST_BEGIN
   CSRR(x16, fcsr)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1:
   CSRW(fcsr, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1_str)
 
 # Testcase: fcsr access with mstatus.FS=0: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -58,10 +56,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0:
   CSRW(fcsr, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0_str)
 
 # Testcase: fcsr access with mstatus.FS=0: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -70,10 +66,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all:
   CSRS(fcsr, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all_str)
 
 # Testcase: fcsr access with mstatus.FS=0: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -82,10 +76,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all:
   CSRC(fcsr, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all_str)
   CSRW(fcsr, x16)       # Restore CSR
 
 # Testcase: frm access with mstatus.FS=0: write 1s
@@ -96,10 +88,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fcsr_csrrc_all:
   CSRR(x16, frm)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1:
   CSRW(frm, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1_str)
 
 # Testcase: frm access with mstatus.FS=0: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -108,10 +98,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0:
   CSRW(frm, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0_str)
 
 # Testcase: frm access with mstatus.FS=0: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -120,10 +108,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all:
   CSRS(frm, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all_str)
 
 # Testcase: frm access with mstatus.FS=0: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -132,10 +118,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all:
   CSRC(frm, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all_str)
   CSRW(frm, x16)       # Restore CSR
 
 # Testcase: fflags access with mstatus.FS=0: write 1s
@@ -146,10 +130,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_frm_csrrc_all:
   CSRR(x16, fflags)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1:
   CSRW(fflags, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1_str)
 
 # Testcase: fflags access with mstatus.FS=0: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -158,10 +140,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0:
   CSRW(fflags, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0_str)
 
 # Testcase: fflags access with mstatus.FS=0: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -170,10 +150,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all:
   CSRS(fflags, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all_str)
 
 # Testcase: fflags access with mstatus.FS=0: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -182,10 +160,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all:
   CSRC(fflags, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all_str)
   CSRW(fflags, x16)       # Restore CSR
 
 # Testcase: fcsr access with mstatus.FS=1: write 1s
@@ -196,10 +172,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs0_fflags_csrrc_all:
   CSRR(x16, fcsr)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1:
   CSRW(fcsr, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1_str)
 
 # Testcase: fcsr access with mstatus.FS=1: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -208,10 +182,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0:
   CSRW(fcsr, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0_str)
 
 # Testcase: fcsr access with mstatus.FS=1: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -220,10 +192,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all:
   CSRS(fcsr, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all_str)
 
 # Testcase: fcsr access with mstatus.FS=1: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -232,10 +202,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all:
   CSRC(fcsr, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all_str)
   CSRW(fcsr, x16)       # Restore CSR
 
 # Testcase: frm access with mstatus.FS=1: write 1s
@@ -246,10 +214,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fcsr_csrrc_all:
   CSRR(x16, frm)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1:
   CSRW(frm, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1_str)
 
 # Testcase: frm access with mstatus.FS=1: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -258,10 +224,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0:
   CSRW(frm, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0_str)
 
 # Testcase: frm access with mstatus.FS=1: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -270,10 +234,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all:
   CSRS(frm, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all_str)
 
 # Testcase: frm access with mstatus.FS=1: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -282,10 +244,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all:
   CSRC(frm, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all_str)
   CSRW(frm, x16)       # Restore CSR
 
 # Testcase: fflags access with mstatus.FS=1: write 1s
@@ -296,10 +256,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_frm_csrrc_all:
   CSRR(x16, fflags)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1:
   CSRW(fflags, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1_str)
 
 # Testcase: fflags access with mstatus.FS=1: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -308,10 +266,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0:
   CSRW(fflags, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0_str)
 
 # Testcase: fflags access with mstatus.FS=1: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -320,10 +276,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all:
   CSRS(fflags, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all_str)
 
 # Testcase: fflags access with mstatus.FS=1: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -332,10 +286,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all:
   CSRC(fflags, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all_str)
   CSRW(fflags, x16)       # Restore CSR
 
 # Testcase: fcsr access with mstatus.FS=2: write 1s
@@ -346,10 +298,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs1_fflags_csrrc_all:
   CSRR(x16, fcsr)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1:
   CSRW(fcsr, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1_str)
 
 # Testcase: fcsr access with mstatus.FS=2: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -358,10 +308,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0:
   CSRW(fcsr, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0_str)
 
 # Testcase: fcsr access with mstatus.FS=2: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -370,10 +318,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all:
   CSRS(fcsr, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all_str)
 
 # Testcase: fcsr access with mstatus.FS=2: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -382,10 +328,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all:
   CSRC(fcsr, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all_str)
   CSRW(fcsr, x16)       # Restore CSR
 
 # Testcase: frm access with mstatus.FS=2: write 1s
@@ -396,10 +340,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fcsr_csrrc_all:
   CSRR(x16, frm)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1:
   CSRW(frm, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1_str)
 
 # Testcase: frm access with mstatus.FS=2: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -408,10 +350,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0:
   CSRW(frm, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0_str)
 
 # Testcase: frm access with mstatus.FS=2: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -420,10 +360,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all:
   CSRS(frm, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all_str)
 
 # Testcase: frm access with mstatus.FS=2: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -432,10 +370,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all:
   CSRC(frm, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all_str)
   CSRW(frm, x16)       # Restore CSR
 
 # Testcase: fflags access with mstatus.FS=2: write 1s
@@ -446,10 +382,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_frm_csrrc_all:
   CSRR(x16, fflags)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1:
   CSRW(fflags, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1_str)
 
 # Testcase: fflags access with mstatus.FS=2: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -458,10 +392,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0:
   CSRW(fflags, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0_str)
 
 # Testcase: fflags access with mstatus.FS=2: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -470,10 +402,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all:
   CSRS(fflags, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all_str)
 
 # Testcase: fflags access with mstatus.FS=2: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -482,10 +412,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all:
   CSRC(fflags, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all_str)
   CSRW(fflags, x16)       # Restore CSR
 
 # Testcase: fcsr access with mstatus.FS=3: write 1s
@@ -496,10 +424,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs2_fflags_csrrc_all:
   CSRR(x16, fcsr)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1:
   CSRW(fcsr, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1_str)
 
 # Testcase: fcsr access with mstatus.FS=3: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -508,10 +434,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0:
   CSRW(fcsr, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0_str)
 
 # Testcase: fcsr access with mstatus.FS=3: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -520,10 +444,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all:
   CSRS(fcsr, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all_str)
 
 # Testcase: fcsr access with mstatus.FS=3: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -532,10 +454,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all:
   CSRC(fcsr, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all_str)
-  # Read fcsr into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all_str)
+  # Read fcsr into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all_str)
   CSRW(fcsr, x16)       # Restore CSR
 
 # Testcase: frm access with mstatus.FS=3: write 1s
@@ -546,10 +466,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fcsr_csrrc_all:
   CSRR(x16, frm)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1:
   CSRW(frm, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1_str)
 
 # Testcase: frm access with mstatus.FS=3: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -558,10 +476,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0:
   CSRW(frm, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0_str)
 
 # Testcase: frm access with mstatus.FS=3: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -570,10 +486,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all:
   CSRS(frm, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all_str)
 
 # Testcase: frm access with mstatus.FS=3: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -582,10 +496,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all:
   CSRC(frm, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all_str)
-  # Read frm into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all_str)
+  # Read frm into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all_str)
   CSRW(frm, x16)       # Restore CSR
 
 # Testcase: fflags access with mstatus.FS=3: write 1s
@@ -596,10 +508,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_frm_csrrc_all:
   CSRR(x16, fflags)    # Save CSR
 SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1:
   CSRW(fflags, x13)    # Write all 1s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1_str)
 
 # Testcase: fflags access with mstatus.FS=3: write 0s
   LI(x31, 24576)  # 11 in bits 14:13
@@ -608,10 +518,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0:
   CSRW(fflags, zero)   # Write all 0s to CSR
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0_str)
 
 # Testcase: fflags access with mstatus.FS=3: set all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -620,10 +528,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrw0:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all:
   CSRS(fflags, x13)    # Set all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all_str)
 
 # Testcase: fflags access with mstatus.FS=3: clear all bits
   LI(x31, 24576)  # 11 in bits 14:13
@@ -632,10 +538,8 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrs_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all:
   CSRC(fflags, x13)    # Clear all CSR bits
-  # Read mstatus into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all_str)
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all_str)
+  # Read mstatus into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all, SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all_str)
   CSRW(fflags, x16)       # Restore CSR
 
 
@@ -657,8 +561,7 @@ SmF_fcsr_cg_cp_fcsr_access_fs3_fflags_csrrc_all:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsw_f1_0_x25:
   fsw f1, 0(x25) # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsw_f1_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsw_f1_0_x25_str)
 
 # Testcase: flw f0, 0(x25) with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -667,8 +570,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsw_f1_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_flw_f0_0_x25:
   flw f0, 0(x25) # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_flw_f0_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_flw_f0_0_x25_str)
 
 # Testcase: fadd.s f0, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -677,8 +579,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_flw_f0_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fadd_s_f0_f1_f2:
   fadd.s f0, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fadd_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fadd_s_f0_f1_f2_str)
 
 # Testcase: fsub.s f0, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -687,8 +588,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fadd_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsub_s_f0_f1_f2:
   fsub.s f0, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsub_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsub_s_f0_f1_f2_str)
 
 # Testcase: fmul.s f0, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -697,8 +597,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsub_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmul_s_f0_f1_f2:
   fmul.s f0, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmul_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmul_s_f0_f1_f2_str)
 
 # Testcase: fdiv.s f0, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -707,8 +606,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmul_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fdiv_s_f0_f1_f2:
   fdiv.s f0, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fdiv_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fdiv_s_f0_f1_f2_str)
 
 # Testcase: fcvt.s.w f0, x0 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -717,8 +615,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fdiv_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_w_f0_x0:
   fcvt.s.w f0, x0 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_w_f0_x0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_w_f0_x0_str)
 
 # Testcase: fcvt.w.s x31, f0 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -727,8 +624,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_w_f0_x0:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_w_s_x31_f0:
   fcvt.w.s x31, f0 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_w_s_x31_f0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_w_s_x31_f0_str)
 
 # Testcase: fmadd.s f0, f1, f2, f3 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -737,8 +633,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_w_s_x31_f0:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmadd_s_f0_f1_f2_f3:
   fmadd.s f0, f1, f2, f3 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmadd_s_f0_f1_f2_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmadd_s_f0_f1_f2_f3_str)
 
 # Testcase: fsqrt.s f0, f1 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -747,8 +642,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmadd_s_f0_f1_f2_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsqrt_s_f0_f1:
   fsqrt.s f0, f1 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsqrt_s_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsqrt_s_f0_f1_str)
 
 # Testcase: fsgnj.s f0, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -757,8 +651,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsqrt_s_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsgnj_s_f0_f1_f2:
   fsgnj.s f0, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsgnj_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsgnj_s_f0_f1_f2_str)
 
 # Testcase: feq.s x31, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -767,8 +660,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fsgnj_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_feq_s_x31_f1_f2:
   feq.s x31, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_feq_s_x31_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_feq_s_x31_f1_f2_str)
 
 # Testcase: fmv.x.w x31, f1 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -777,8 +669,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_feq_s_x31_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_x_w_x31_f1:
   fmv.x.w x31, f1 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_x_w_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_x_w_x31_f1_str)
 
 # Testcase: fmv.w.x f0, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -787,8 +678,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_x_w_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_w_x_f0_x31:
   fmv.w.x f0, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_w_x_f0_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_w_x_f0_x31_str)
 
 # Testcase: fclass.s x31, f3 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -797,8 +687,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmv_w_x_f0_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fclass_s_x31_f3:
   fclass.s x31, f3 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fclass_s_x31_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fclass_s_x31_f3_str)
 
 # Testcase: fmin.s f0, f1, f2 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -807,8 +696,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fclass_s_x31_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmin_s_f0_f1_f2:
   fmin.s f0, f1, f2 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmin_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmin_s_f0_f1_f2_str)
 
 # Testcase: add x31, x31, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -817,8 +705,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmin_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_add_x31_x31_x31:
   add x31, x31, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_add_x31_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_add_x31_x31_x31_str)
 
 # Testcase: csrr x31, fcsr with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -827,8 +714,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_add_x31_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fcsr:
   csrr x31, fcsr # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fcsr_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fcsr_str)
 
 # Testcase: csrr x31, frm with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -837,8 +723,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fcsr:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_frm:
   csrr x31, frm # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_frm_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_frm_str)
 
 # Testcase: csrr x31, fflags with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -847,8 +732,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_frm:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fflags:
   csrr x31, fflags # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fflags_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fflags_str)
 
 # Testcase: csrrw x31, fcsr, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -857,8 +741,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrr_x31_fflags:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fcsr_x31:
   csrrw x31, fcsr, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fcsr_x31_str)
 
 # Testcase: csrrw x31, frm, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -867,8 +750,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_frm_x31:
   csrrw x31, frm, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_frm_x31_str)
 
 # Testcase: csrrw x31, fflags, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -877,8 +759,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fflags_x31:
   csrrw x31, fflags, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fflags_x31_str)
 
 # Testcase: csrrs x31, fcsr, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -887,8 +768,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrw_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fcsr_x31:
   csrrs x31, fcsr, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fcsr_x31_str)
 
 # Testcase: csrrs x31, frm, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -897,8 +777,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_frm_x31:
   csrrs x31, frm, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_frm_x31_str)
 
 # Testcase: csrrs x31, fflags, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -907,8 +786,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fflags_x31:
   csrrs x31, fflags, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fflags_x31_str)
 
 # Testcase: csrrc x31, fcsr, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -917,8 +795,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrs_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fcsr_x31:
   csrrc x31, fcsr, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fcsr_x31_str)
 
 # Testcase: csrrc x31, frm, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -927,8 +804,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_frm_x31:
   csrrc x31, frm, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_frm_x31_str)
 
 # Testcase: csrrc x31, fflags, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -937,8 +813,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fflags_x31:
   csrrc x31, fflags, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fflags_x31_str)
 
 #ifdef D_SUPPORTED
 
@@ -949,8 +824,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_csrrc_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_d_f0_f1:
   fcvt.s.d f0, f1 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_d_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_d_f0_f1_str)
 
 #if __riscv_xlen == 32
 #ifdef ZFA_SUPPORTED
@@ -962,8 +836,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fcvt_s_d_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvh_x_d_x31_f1:
   fmvh.x.d x31, f1 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvh_x_d_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvh_x_d_x31_f1_str)
 
 # Testcase: fmvp.d.x f0, x31, x31 with mstatus.FS=0
   LI(x31, 24576)  # 11 in bits 14:13
@@ -972,8 +845,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvh_x_d_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvp_d_x_f0_x31_x31:
   fmvp.d.x f0, x31, x31 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvp_d_x_f0_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvp_d_x_f0_x31_x31_str)
 
 #endif
 #endif
@@ -987,8 +859,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fmvp_d_x_f0_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fli_s_f0_0_5:
   fli.s f0, 0.5 # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fli_s_f0_0_5_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fli_s_f0_0_5_str)
 
   LI(x31, 24576)  # 11 in bits 14:13
   CSRC(mstatus, x31) # Clear mstatus.FS=00
@@ -996,8 +867,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fli_s_f0_0_5:
   CSRS(mstatus, x31) # Set mstatus.FS to 0
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fround_s_f0_f3_rup:
   fround.s f0, f3, rup # execute instruction with mstatus.FS=0
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fround_s_f0_f3_rup_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fround_s_f0_f3_rup_str)
 
 #endif
 
@@ -1008,8 +878,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs0_fround_s_f0_f3_rup:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsw_f1_0_x25:
   fsw f1, 0(x25) # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsw_f1_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsw_f1_0_x25_str)
 
 # Testcase: flw f0, 0(x25) with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1018,8 +887,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsw_f1_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_flw_f0_0_x25:
   flw f0, 0(x25) # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_flw_f0_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_flw_f0_0_x25_str)
 
 # Testcase: fadd.s f0, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1028,8 +896,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_flw_f0_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fadd_s_f0_f1_f2:
   fadd.s f0, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fadd_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fadd_s_f0_f1_f2_str)
 
 # Testcase: fsub.s f0, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1038,8 +905,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fadd_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsub_s_f0_f1_f2:
   fsub.s f0, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsub_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsub_s_f0_f1_f2_str)
 
 # Testcase: fmul.s f0, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1048,8 +914,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsub_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmul_s_f0_f1_f2:
   fmul.s f0, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmul_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmul_s_f0_f1_f2_str)
 
 # Testcase: fdiv.s f0, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1058,8 +923,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmul_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fdiv_s_f0_f1_f2:
   fdiv.s f0, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fdiv_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fdiv_s_f0_f1_f2_str)
 
 # Testcase: fcvt.s.w f0, x0 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1068,8 +932,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fdiv_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_w_f0_x0:
   fcvt.s.w f0, x0 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_w_f0_x0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_w_f0_x0_str)
 
 # Testcase: fcvt.w.s x31, f0 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1078,8 +941,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_w_f0_x0:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_w_s_x31_f0:
   fcvt.w.s x31, f0 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_w_s_x31_f0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_w_s_x31_f0_str)
 
 # Testcase: fmadd.s f0, f1, f2, f3 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1088,8 +950,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_w_s_x31_f0:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmadd_s_f0_f1_f2_f3:
   fmadd.s f0, f1, f2, f3 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmadd_s_f0_f1_f2_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmadd_s_f0_f1_f2_f3_str)
 
 # Testcase: fsqrt.s f0, f1 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1098,8 +959,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmadd_s_f0_f1_f2_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsqrt_s_f0_f1:
   fsqrt.s f0, f1 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsqrt_s_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsqrt_s_f0_f1_str)
 
 # Testcase: fsgnj.s f0, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1108,8 +968,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsqrt_s_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsgnj_s_f0_f1_f2:
   fsgnj.s f0, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsgnj_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsgnj_s_f0_f1_f2_str)
 
 # Testcase: feq.s x31, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1118,8 +977,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fsgnj_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_feq_s_x31_f1_f2:
   feq.s x31, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_feq_s_x31_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_feq_s_x31_f1_f2_str)
 
 # Testcase: fmv.x.w x31, f1 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1128,8 +986,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_feq_s_x31_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_x_w_x31_f1:
   fmv.x.w x31, f1 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_x_w_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_x_w_x31_f1_str)
 
 # Testcase: fmv.w.x f0, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1138,8 +995,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_x_w_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_w_x_f0_x31:
   fmv.w.x f0, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_w_x_f0_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_w_x_f0_x31_str)
 
 # Testcase: fclass.s x31, f3 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1148,8 +1004,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmv_w_x_f0_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fclass_s_x31_f3:
   fclass.s x31, f3 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fclass_s_x31_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fclass_s_x31_f3_str)
 
 # Testcase: fmin.s f0, f1, f2 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1158,8 +1013,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fclass_s_x31_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmin_s_f0_f1_f2:
   fmin.s f0, f1, f2 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmin_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmin_s_f0_f1_f2_str)
 
 # Testcase: add x31, x31, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1168,8 +1022,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmin_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_add_x31_x31_x31:
   add x31, x31, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_add_x31_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_add_x31_x31_x31_str)
 
 # Testcase: csrr x31, fcsr with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1178,8 +1031,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_add_x31_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fcsr:
   csrr x31, fcsr # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fcsr_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fcsr_str)
 
 # Testcase: csrr x31, frm with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1188,8 +1040,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fcsr:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_frm:
   csrr x31, frm # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_frm_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_frm_str)
 
 # Testcase: csrr x31, fflags with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1198,8 +1049,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_frm:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fflags:
   csrr x31, fflags # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fflags_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fflags_str)
 
 # Testcase: csrrw x31, fcsr, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1208,8 +1058,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrr_x31_fflags:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fcsr_x31:
   csrrw x31, fcsr, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fcsr_x31_str)
 
 # Testcase: csrrw x31, frm, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1218,8 +1067,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_frm_x31:
   csrrw x31, frm, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_frm_x31_str)
 
 # Testcase: csrrw x31, fflags, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1228,8 +1076,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fflags_x31:
   csrrw x31, fflags, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fflags_x31_str)
 
 # Testcase: csrrs x31, fcsr, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1238,8 +1085,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrw_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fcsr_x31:
   csrrs x31, fcsr, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fcsr_x31_str)
 
 # Testcase: csrrs x31, frm, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1248,8 +1094,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_frm_x31:
   csrrs x31, frm, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_frm_x31_str)
 
 # Testcase: csrrs x31, fflags, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1258,8 +1103,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fflags_x31:
   csrrs x31, fflags, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fflags_x31_str)
 
 # Testcase: csrrc x31, fcsr, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1268,8 +1112,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrs_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fcsr_x31:
   csrrc x31, fcsr, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fcsr_x31_str)
 
 # Testcase: csrrc x31, frm, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1278,8 +1121,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_frm_x31:
   csrrc x31, frm, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_frm_x31_str)
 
 # Testcase: csrrc x31, fflags, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1288,8 +1130,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fflags_x31:
   csrrc x31, fflags, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fflags_x31_str)
 
 #ifdef D_SUPPORTED
 
@@ -1300,8 +1141,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_csrrc_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_d_f0_f1:
   fcvt.s.d f0, f1 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_d_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_d_f0_f1_str)
 
 #if __riscv_xlen == 32
 #ifdef ZFA_SUPPORTED
@@ -1313,8 +1153,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fcvt_s_d_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvh_x_d_x31_f1:
   fmvh.x.d x31, f1 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvh_x_d_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvh_x_d_x31_f1_str)
 
 # Testcase: fmvp.d.x f0, x31, x31 with mstatus.FS=1
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1323,8 +1162,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvh_x_d_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvp_d_x_f0_x31_x31:
   fmvp.d.x f0, x31, x31 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvp_d_x_f0_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvp_d_x_f0_x31_x31_str)
 
 #endif
 #endif
@@ -1338,8 +1176,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fmvp_d_x_f0_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fli_s_f0_0_5:
   fli.s f0, 0.5 # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fli_s_f0_0_5_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fli_s_f0_0_5_str)
 
   LI(x31, 24576)  # 11 in bits 14:13
   CSRC(mstatus, x31) # Clear mstatus.FS=00
@@ -1347,8 +1184,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fli_s_f0_0_5:
   CSRS(mstatus, x31) # Set mstatus.FS to 1
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fround_s_f0_f3_rup:
   fround.s f0, f3, rup # execute instruction with mstatus.FS=1
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fround_s_f0_f3_rup_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fround_s_f0_f3_rup_str)
 
 #endif
 
@@ -1359,8 +1195,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs1_fround_s_f0_f3_rup:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsw_f1_0_x25:
   fsw f1, 0(x25) # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsw_f1_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsw_f1_0_x25_str)
 
 # Testcase: flw f0, 0(x25) with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1369,8 +1204,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsw_f1_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_flw_f0_0_x25:
   flw f0, 0(x25) # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_flw_f0_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_flw_f0_0_x25_str)
 
 # Testcase: fadd.s f0, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1379,8 +1213,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_flw_f0_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fadd_s_f0_f1_f2:
   fadd.s f0, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fadd_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fadd_s_f0_f1_f2_str)
 
 # Testcase: fsub.s f0, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1389,8 +1222,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fadd_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsub_s_f0_f1_f2:
   fsub.s f0, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsub_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsub_s_f0_f1_f2_str)
 
 # Testcase: fmul.s f0, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1399,8 +1231,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsub_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmul_s_f0_f1_f2:
   fmul.s f0, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmul_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmul_s_f0_f1_f2_str)
 
 # Testcase: fdiv.s f0, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1409,8 +1240,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmul_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fdiv_s_f0_f1_f2:
   fdiv.s f0, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fdiv_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fdiv_s_f0_f1_f2_str)
 
 # Testcase: fcvt.s.w f0, x0 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1419,8 +1249,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fdiv_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_w_f0_x0:
   fcvt.s.w f0, x0 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_w_f0_x0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_w_f0_x0_str)
 
 # Testcase: fcvt.w.s x31, f0 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1429,8 +1258,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_w_f0_x0:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_w_s_x31_f0:
   fcvt.w.s x31, f0 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_w_s_x31_f0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_w_s_x31_f0_str)
 
 # Testcase: fmadd.s f0, f1, f2, f3 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1439,8 +1267,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_w_s_x31_f0:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmadd_s_f0_f1_f2_f3:
   fmadd.s f0, f1, f2, f3 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmadd_s_f0_f1_f2_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmadd_s_f0_f1_f2_f3_str)
 
 # Testcase: fsqrt.s f0, f1 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1449,8 +1276,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmadd_s_f0_f1_f2_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsqrt_s_f0_f1:
   fsqrt.s f0, f1 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsqrt_s_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsqrt_s_f0_f1_str)
 
 # Testcase: fsgnj.s f0, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1459,8 +1285,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsqrt_s_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsgnj_s_f0_f1_f2:
   fsgnj.s f0, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsgnj_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsgnj_s_f0_f1_f2_str)
 
 # Testcase: feq.s x31, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1469,8 +1294,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fsgnj_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_feq_s_x31_f1_f2:
   feq.s x31, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_feq_s_x31_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_feq_s_x31_f1_f2_str)
 
 # Testcase: fmv.x.w x31, f1 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1479,8 +1303,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_feq_s_x31_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_x_w_x31_f1:
   fmv.x.w x31, f1 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_x_w_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_x_w_x31_f1_str)
 
 # Testcase: fmv.w.x f0, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1489,8 +1312,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_x_w_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_w_x_f0_x31:
   fmv.w.x f0, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_w_x_f0_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_w_x_f0_x31_str)
 
 # Testcase: fclass.s x31, f3 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1499,8 +1321,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmv_w_x_f0_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fclass_s_x31_f3:
   fclass.s x31, f3 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fclass_s_x31_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fclass_s_x31_f3_str)
 
 # Testcase: fmin.s f0, f1, f2 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1509,8 +1330,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fclass_s_x31_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmin_s_f0_f1_f2:
   fmin.s f0, f1, f2 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmin_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmin_s_f0_f1_f2_str)
 
 # Testcase: add x31, x31, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1519,8 +1339,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmin_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_add_x31_x31_x31:
   add x31, x31, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_add_x31_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_add_x31_x31_x31_str)
 
 # Testcase: csrr x31, fcsr with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1529,8 +1348,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_add_x31_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fcsr:
   csrr x31, fcsr # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fcsr_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fcsr_str)
 
 # Testcase: csrr x31, frm with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1539,8 +1357,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fcsr:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_frm:
   csrr x31, frm # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_frm_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_frm_str)
 
 # Testcase: csrr x31, fflags with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1549,8 +1366,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_frm:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fflags:
   csrr x31, fflags # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fflags_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fflags_str)
 
 # Testcase: csrrw x31, fcsr, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1559,8 +1375,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrr_x31_fflags:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fcsr_x31:
   csrrw x31, fcsr, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fcsr_x31_str)
 
 # Testcase: csrrw x31, frm, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1569,8 +1384,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_frm_x31:
   csrrw x31, frm, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_frm_x31_str)
 
 # Testcase: csrrw x31, fflags, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1579,8 +1393,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fflags_x31:
   csrrw x31, fflags, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fflags_x31_str)
 
 # Testcase: csrrs x31, fcsr, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1589,8 +1402,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrw_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fcsr_x31:
   csrrs x31, fcsr, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fcsr_x31_str)
 
 # Testcase: csrrs x31, frm, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1599,8 +1411,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_frm_x31:
   csrrs x31, frm, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_frm_x31_str)
 
 # Testcase: csrrs x31, fflags, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1609,8 +1420,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fflags_x31:
   csrrs x31, fflags, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fflags_x31_str)
 
 # Testcase: csrrc x31, fcsr, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1619,8 +1429,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrs_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fcsr_x31:
   csrrc x31, fcsr, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fcsr_x31_str)
 
 # Testcase: csrrc x31, frm, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1629,8 +1438,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_frm_x31:
   csrrc x31, frm, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_frm_x31_str)
 
 # Testcase: csrrc x31, fflags, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1639,8 +1447,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fflags_x31:
   csrrc x31, fflags, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fflags_x31_str)
 
 #ifdef D_SUPPORTED
 
@@ -1651,8 +1458,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_csrrc_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_d_f0_f1:
   fcvt.s.d f0, f1 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_d_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_d_f0_f1_str)
 
 #if __riscv_xlen == 32
 #ifdef ZFA_SUPPORTED
@@ -1664,8 +1470,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fcvt_s_d_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvh_x_d_x31_f1:
   fmvh.x.d x31, f1 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvh_x_d_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvh_x_d_x31_f1_str)
 
 # Testcase: fmvp.d.x f0, x31, x31 with mstatus.FS=2
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1674,8 +1479,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvh_x_d_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvp_d_x_f0_x31_x31:
   fmvp.d.x f0, x31, x31 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvp_d_x_f0_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvp_d_x_f0_x31_x31_str)
 
 #endif
 #endif
@@ -1689,8 +1493,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fmvp_d_x_f0_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fli_s_f0_0_5:
   fli.s f0, 0.5 # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fli_s_f0_0_5_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fli_s_f0_0_5_str)
 
   LI(x31, 24576)  # 11 in bits 14:13
   CSRC(mstatus, x31) # Clear mstatus.FS=00
@@ -1698,8 +1501,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fli_s_f0_0_5:
   CSRS(mstatus, x31) # Set mstatus.FS to 2
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fround_s_f0_f3_rup:
   fround.s f0, f3, rup # execute instruction with mstatus.FS=2
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fround_s_f0_f3_rup_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fround_s_f0_f3_rup_str)
 
 #endif
 
@@ -1710,8 +1512,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs2_fround_s_f0_f3_rup:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsw_f1_0_x25:
   fsw f1, 0(x25) # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsw_f1_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsw_f1_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsw_f1_0_x25_str)
 
 # Testcase: flw f0, 0(x25) with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1720,8 +1521,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsw_f1_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_flw_f0_0_x25:
   flw f0, 0(x25) # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_flw_f0_0_x25_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_flw_f0_0_x25, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_flw_f0_0_x25_str)
 
 # Testcase: fadd.s f0, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1730,8 +1530,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_flw_f0_0_x25:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fadd_s_f0_f1_f2:
   fadd.s f0, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fadd_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fadd_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fadd_s_f0_f1_f2_str)
 
 # Testcase: fsub.s f0, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1740,8 +1539,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fadd_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsub_s_f0_f1_f2:
   fsub.s f0, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsub_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsub_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsub_s_f0_f1_f2_str)
 
 # Testcase: fmul.s f0, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1750,8 +1548,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsub_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmul_s_f0_f1_f2:
   fmul.s f0, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmul_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmul_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmul_s_f0_f1_f2_str)
 
 # Testcase: fdiv.s f0, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1760,8 +1557,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmul_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fdiv_s_f0_f1_f2:
   fdiv.s f0, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fdiv_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fdiv_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fdiv_s_f0_f1_f2_str)
 
 # Testcase: fcvt.s.w f0, x0 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1770,8 +1566,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fdiv_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_w_f0_x0:
   fcvt.s.w f0, x0 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_w_f0_x0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_w_f0_x0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_w_f0_x0_str)
 
 # Testcase: fcvt.w.s x31, f0 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1780,8 +1575,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_w_f0_x0:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_w_s_x31_f0:
   fcvt.w.s x31, f0 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_w_s_x31_f0_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_w_s_x31_f0, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_w_s_x31_f0_str)
 
 # Testcase: fmadd.s f0, f1, f2, f3 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1790,8 +1584,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_w_s_x31_f0:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmadd_s_f0_f1_f2_f3:
   fmadd.s f0, f1, f2, f3 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmadd_s_f0_f1_f2_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmadd_s_f0_f1_f2_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmadd_s_f0_f1_f2_f3_str)
 
 # Testcase: fsqrt.s f0, f1 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1800,8 +1593,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmadd_s_f0_f1_f2_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsqrt_s_f0_f1:
   fsqrt.s f0, f1 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsqrt_s_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsqrt_s_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsqrt_s_f0_f1_str)
 
 # Testcase: fsgnj.s f0, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1810,8 +1602,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsqrt_s_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsgnj_s_f0_f1_f2:
   fsgnj.s f0, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsgnj_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsgnj_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsgnj_s_f0_f1_f2_str)
 
 # Testcase: feq.s x31, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1820,8 +1611,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fsgnj_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_feq_s_x31_f1_f2:
   feq.s x31, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_feq_s_x31_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_feq_s_x31_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_feq_s_x31_f1_f2_str)
 
 # Testcase: fmv.x.w x31, f1 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1830,8 +1620,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_feq_s_x31_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_x_w_x31_f1:
   fmv.x.w x31, f1 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_x_w_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_x_w_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_x_w_x31_f1_str)
 
 # Testcase: fmv.w.x f0, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1840,8 +1629,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_x_w_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_w_x_f0_x31:
   fmv.w.x f0, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_w_x_f0_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_w_x_f0_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_w_x_f0_x31_str)
 
 # Testcase: fclass.s x31, f3 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1850,8 +1638,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmv_w_x_f0_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fclass_s_x31_f3:
   fclass.s x31, f3 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fclass_s_x31_f3_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fclass_s_x31_f3, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fclass_s_x31_f3_str)
 
 # Testcase: fmin.s f0, f1, f2 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1860,8 +1647,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fclass_s_x31_f3:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmin_s_f0_f1_f2:
   fmin.s f0, f1, f2 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmin_s_f0_f1_f2_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmin_s_f0_f1_f2, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmin_s_f0_f1_f2_str)
 
 # Testcase: add x31, x31, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1870,8 +1656,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmin_s_f0_f1_f2:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_add_x31_x31_x31:
   add x31, x31, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_add_x31_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_add_x31_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_add_x31_x31_x31_str)
 
 # Testcase: csrr x31, fcsr with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1880,8 +1665,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_add_x31_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fcsr:
   csrr x31, fcsr # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fcsr_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fcsr, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fcsr_str)
 
 # Testcase: csrr x31, frm with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1890,8 +1674,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fcsr:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_frm:
   csrr x31, frm # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_frm_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_frm, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_frm_str)
 
 # Testcase: csrr x31, fflags with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1900,8 +1683,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_frm:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fflags:
   csrr x31, fflags # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fflags_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fflags, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fflags_str)
 
 # Testcase: csrrw x31, fcsr, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1910,8 +1692,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrr_x31_fflags:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fcsr_x31:
   csrrw x31, fcsr, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fcsr_x31_str)
 
 # Testcase: csrrw x31, frm, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1920,8 +1701,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_frm_x31:
   csrrw x31, frm, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_frm_x31_str)
 
 # Testcase: csrrw x31, fflags, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1930,8 +1710,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fflags_x31:
   csrrw x31, fflags, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fflags_x31_str)
 
 # Testcase: csrrs x31, fcsr, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1940,8 +1719,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrw_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fcsr_x31:
   csrrs x31, fcsr, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fcsr_x31_str)
 
 # Testcase: csrrs x31, frm, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1950,8 +1728,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_frm_x31:
   csrrs x31, frm, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_frm_x31_str)
 
 # Testcase: csrrs x31, fflags, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1960,8 +1737,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fflags_x31:
   csrrs x31, fflags, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fflags_x31_str)
 
 # Testcase: csrrc x31, fcsr, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1970,8 +1746,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrs_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fcsr_x31:
   csrrc x31, fcsr, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fcsr_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fcsr_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fcsr_x31_str)
 
 # Testcase: csrrc x31, frm, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1980,8 +1755,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fcsr_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_frm_x31:
   csrrc x31, frm, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_frm_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_frm_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_frm_x31_str)
 
 # Testcase: csrrc x31, fflags, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -1990,8 +1764,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_frm_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fflags_x31:
   csrrc x31, fflags, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fflags_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fflags_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fflags_x31_str)
 
 #ifdef D_SUPPORTED
 
@@ -2002,8 +1775,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_csrrc_x31_fflags_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_d_f0_f1:
   fcvt.s.d f0, f1 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_d_f0_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_d_f0_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_d_f0_f1_str)
 
 #if __riscv_xlen == 32
 #ifdef ZFA_SUPPORTED
@@ -2015,8 +1787,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fcvt_s_d_f0_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvh_x_d_x31_f1:
   fmvh.x.d x31, f1 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvh_x_d_x31_f1_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvh_x_d_x31_f1, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvh_x_d_x31_f1_str)
 
 # Testcase: fmvp.d.x f0, x31, x31 with mstatus.FS=3
   LI(x31, 24576)  # 11 in bits 14:13
@@ -2025,8 +1796,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvh_x_d_x31_f1:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvp_d_x_f0_x31_x31:
   fmvp.d.x f0, x31, x31 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvp_d_x_f0_x31_x31_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvp_d_x_f0_x31_x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvp_d_x_f0_x31_x31_str)
 
 #endif
 #endif
@@ -2040,8 +1810,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fmvp_d_x_f0_x31_x31:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fli_s_f0_0_5:
   fli.s f0, 0.5 # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fli_s_f0_0_5_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fli_s_f0_0_5, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fli_s_f0_0_5_str)
 
   LI(x31, 24576)  # 11 in bits 14:13
   CSRC(mstatus, x31) # Clear mstatus.FS=00
@@ -2049,8 +1818,7 @@ SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fli_s_f0_0_5:
   CSRS(mstatus, x31) # Set mstatus.FS to 3
 SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fround_s_f0_f3_rup:
   fround.s f0, f3, rup # execute instruction with mstatus.FS=3
-  # Read mstatus into x31 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fround_s_f0_f3_rup_str)
+  # Read mstatus into x31 and check against expected.RVTEST_SIGUPD_CSR_READ(mstatus, x31, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fround_s_f0_f3_rup, SmF_fcsr_cg_cp_mstatus_FS_transition_fs3_fround_s_f0_f3_rup_str)
 
 #endif
 

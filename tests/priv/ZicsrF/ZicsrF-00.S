@@ -41,23 +41,19 @@ RVTEST_BEGIN
   li x15, -1           # x15 = all 1s
 ZicsrF_cg_cp_fcsr_access_fcsr_csrrw1:
   CSRW(fcsr, x15)    # Write all 1s to CSR
-  # Read fcsr into x26 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw1, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw1_str)
+  # Read fcsr into x26 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw1, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw1_str)
 
 ZicsrF_cg_cp_fcsr_access_fcsr_csrrw0:
   CSRW(fcsr, zero)   # Write all 0s to CSR
-  # Read fcsr into x26 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw0, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw0_str)
+  # Read fcsr into x26 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw0, ZicsrF_cg_cp_fcsr_access_fcsr_csrrw0_str)
 
 ZicsrF_cg_cp_fcsr_access_fcsr_csrs_all:
   CSRS(fcsr, x15)    # Set all CSR bits
-  # Read fcsr into x26 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrs_all, ZicsrF_cg_cp_fcsr_access_fcsr_csrs_all_str)
+  # Read fcsr into x26 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrs_all, ZicsrF_cg_cp_fcsr_access_fcsr_csrs_all_str)
 
 ZicsrF_cg_cp_fcsr_access_fcsr_csrrc_all:
   CSRC(fcsr, x15)    # Clear all CSR bits
-  # Read fcsr into x26 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrrc_all, ZicsrF_cg_cp_fcsr_access_fcsr_csrrc_all_str)
+  # Read fcsr into x26 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x26, ZicsrF_cg_cp_fcsr_access_fcsr_csrrc_all, ZicsrF_cg_cp_fcsr_access_fcsr_csrrc_all_str)
   CSRW(fcsr, x18)       # Restore CSR
 
 # CSR Access Tests for fflags
@@ -65,23 +61,19 @@ ZicsrF_cg_cp_fcsr_access_fcsr_csrrc_all:
   li x23, -1           # x23 = all 1s
 ZicsrF_cg_cp_fcsr_access_fflags_csrrw1:
   CSRW(fflags, x23)    # Write all 1s to CSR
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrrw1, ZicsrF_cg_cp_fcsr_access_fflags_csrrw1_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrrw1, ZicsrF_cg_cp_fcsr_access_fflags_csrrw1_str)
 
 ZicsrF_cg_cp_fcsr_access_fflags_csrrw0:
   CSRW(fflags, zero)   # Write all 0s to CSR
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrrw0, ZicsrF_cg_cp_fcsr_access_fflags_csrrw0_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrrw0, ZicsrF_cg_cp_fcsr_access_fflags_csrrw0_str)
 
 ZicsrF_cg_cp_fcsr_access_fflags_csrs_all:
   CSRS(fflags, x23)    # Set all CSR bits
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrs_all, ZicsrF_cg_cp_fcsr_access_fflags_csrs_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrs_all, ZicsrF_cg_cp_fcsr_access_fflags_csrs_all_str)
 
 ZicsrF_cg_cp_fcsr_access_fflags_csrrc_all:
   CSRC(fflags, x23)    # Clear all CSR bits
-  # Read fflags into x10 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrrc_all, ZicsrF_cg_cp_fcsr_access_fflags_csrrc_all_str)
+  # Read fflags into x10 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x10, ZicsrF_cg_cp_fcsr_access_fflags_csrrc_all, ZicsrF_cg_cp_fcsr_access_fflags_csrrc_all_str)
   CSRW(fflags, x25)       # Restore CSR
 
 # CSR Access Tests for frm
@@ -89,23 +81,19 @@ ZicsrF_cg_cp_fcsr_access_fflags_csrrc_all:
   li x24, -1           # x24 = all 1s
 ZicsrF_cg_cp_fcsr_access_frm_csrrw1:
   CSRW(frm, x24)    # Write all 1s to CSR
-  # Read frm into x17 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrrw1, ZicsrF_cg_cp_fcsr_access_frm_csrrw1_str)
+  # Read frm into x17 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrrw1, ZicsrF_cg_cp_fcsr_access_frm_csrrw1_str)
 
 ZicsrF_cg_cp_fcsr_access_frm_csrrw0:
   CSRW(frm, zero)   # Write all 0s to CSR
-  # Read frm into x17 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrrw0, ZicsrF_cg_cp_fcsr_access_frm_csrrw0_str)
+  # Read frm into x17 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrrw0, ZicsrF_cg_cp_fcsr_access_frm_csrrw0_str)
 
 ZicsrF_cg_cp_fcsr_access_frm_csrs_all:
   CSRS(frm, x24)    # Set all CSR bits
-  # Read frm into x17 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrs_all, ZicsrF_cg_cp_fcsr_access_frm_csrs_all_str)
+  # Read frm into x17 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrs_all, ZicsrF_cg_cp_fcsr_access_frm_csrs_all_str)
 
 ZicsrF_cg_cp_fcsr_access_frm_csrrc_all:
   CSRC(frm, x24)    # Clear all CSR bits
-  # Read frm into x17 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrrc_all, ZicsrF_cg_cp_fcsr_access_frm_csrrc_all_str)
+  # Read frm into x17 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x17, ZicsrF_cg_cp_fcsr_access_frm_csrrc_all, ZicsrF_cg_cp_fcsr_access_frm_csrrc_all_str)
   CSRW(frm, x23)       # Restore CSR
 
 
@@ -122,225 +110,193 @@ ZicsrF_cg_cp_fcsr_access_frm_csrrc_all:
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 0
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_0:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_0, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_0_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_0, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_0_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 1
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_1:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_1, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_1_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_1, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_1_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 2
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_2:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_2, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_2_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_2, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_2_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 3
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_3:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_3, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_3_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_3, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_3_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 4
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_4:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_4, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_4_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_4, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_4_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 5
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_5:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_5, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_5_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_5, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_5_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 6
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_6:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_6, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_6_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_6, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_6_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 7
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_7:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_7, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_7_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_7, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_7_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 8
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_8:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_8, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_8_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_8, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_8_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 9
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_9:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_9_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_9_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 10
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_10:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_10, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_10_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_10, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_10_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 11
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_11:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_11, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_11_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_11, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_11_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 12
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_12:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_12, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_12_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_12, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_12_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 13
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_13:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_13, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_13_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_13, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_13_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 14
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_14:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_14, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_14_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_14, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_14_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 15
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_15:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_15, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_15_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_15, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_15_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 16
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_16:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_16, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_16_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_16, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_16_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 17
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_17:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_17, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_17_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_17, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_17_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 18
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_18:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_18, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_18_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_18, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_18_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 19
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_19:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_19, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_19_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_19, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_19_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 20
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_20:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_20, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_20_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_20, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_20_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 21
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_21:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_21, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_21_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_21, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_21_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 22
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_22:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_22, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_22_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_22, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_22_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 23
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_23:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_23, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_23_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_23, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_23_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 24
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_24:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_24, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_24_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_24, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_24_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 25
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_25:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_25, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_25_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_25, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_25_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 26
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_26:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_26, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_26_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_26, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_26_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 27
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_27:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_27, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_27_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_27, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_27_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 28
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_28:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_28, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_28_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_28, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_28_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 29
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_29:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_29, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_29_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_29, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_29_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 30
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_30:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_30, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_30_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_30, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_30_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)     # set walking 1 in column 31
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_31:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_31, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_31_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_31, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_31_str)
   slli x24, x24, 1      # walk the 1
 
 #if __riscv_xlen == 64
@@ -348,225 +304,193 @@ ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_31:
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 32
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_32:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_32, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_32_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_32, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_32_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 33
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_33:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_33, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_33_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_33, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_33_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 34
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_34:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_34, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_34_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_34, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_34_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 35
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_35:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_35, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_35_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_35, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_35_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 36
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_36:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_36, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_36_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_36, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_36_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 37
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_37:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_37, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_37_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_37, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_37_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 38
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_38:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_38, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_38_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_38, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_38_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 39
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_39:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_39, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_39_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_39, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_39_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 40
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_40:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_40, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_40_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_40, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_40_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 41
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_41:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_41, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_41_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_41, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_41_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 42
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_42:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_42, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_42_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_42, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_42_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 43
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_43:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_43, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_43_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_43, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_43_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 44
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_44:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_44, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_44_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_44, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_44_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 45
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_45:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_45, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_45_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_45, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_45_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 46
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_46:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_46, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_46_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_46, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_46_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 47
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_47:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_47, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_47_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_47, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_47_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 48
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_48:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_48, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_48_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_48, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_48_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 49
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_49:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_49, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_49_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_49, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_49_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 50
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_50:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_50, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_50_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_50, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_50_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 51
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_51:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_51, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_51_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_51, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_51_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 52
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_52:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_52, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_52_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_52, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_52_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 53
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_53:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_53, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_53_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_53, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_53_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 54
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_54:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_54, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_54_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_54, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_54_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 55
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_55:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_55, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_55_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_55, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_55_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 56
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_56:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_56, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_56_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_56, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_56_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 57
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_57:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_57, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_57_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_57, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_57_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 58
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_58:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_58, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_58_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_58, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_58_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 59
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_59:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_59, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_59_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_59, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_59_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 60
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_60:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_60, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_60_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_60, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_60_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 61
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_61:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_61, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_61_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_61, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_61_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 62
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_62:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_62, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_62_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_62, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_62_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, zero)    # clear all bits
   CSRS(fcsr, x24)      # set walking 1 in column 63
 ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_63:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_63, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_63_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_63, ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_63_str)
   slli x24, x24, 1      # walk the 1
 #endif
 
@@ -575,225 +499,193 @@ ZicsrF_cg_cp_fcsr_walk_fcsr_set_bit_63:
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 0
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_0:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_0, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_0_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_0, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_0_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 1
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_1:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_1, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_1_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_1, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_1_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 2
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_2:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_2, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_2_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_2, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_2_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 3
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_3:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_3, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_3_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_3, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_3_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 4
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_4:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_4, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_4_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_4, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_4_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 5
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_5:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_5, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_5_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_5, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_5_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 6
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_6:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_6, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_6_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_6, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_6_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 7
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_7:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_7, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_7_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_7, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_7_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 8
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_8:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_8, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_8_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_8, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_8_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 9
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_9:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_9_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_9_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 10
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_10:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_10, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_10_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_10, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_10_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 11
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_11:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_11, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_11_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_11, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_11_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 12
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_12:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_12, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_12_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_12, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_12_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 13
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_13:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_13, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_13_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_13, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_13_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 14
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_14:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_14, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_14_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_14, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_14_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 15
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_15:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_15, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_15_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_15, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_15_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 16
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_16:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_16, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_16_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_16, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_16_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 17
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_17:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_17, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_17_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_17, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_17_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 18
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_18:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_18, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_18_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_18, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_18_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 19
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_19:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_19, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_19_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_19, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_19_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 20
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_20:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_20, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_20_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_20, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_20_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 21
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_21:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_21, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_21_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_21, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_21_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 22
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_22:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_22, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_22_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_22, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_22_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 23
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_23:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_23, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_23_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_23, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_23_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 24
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_24:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_24, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_24_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_24, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_24_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 25
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_25:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_25, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_25_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_25, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_25_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 26
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_26:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_26, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_26_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_26, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_26_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 27
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_27:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_27, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_27_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_27, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_27_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 28
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_28:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_28, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_28_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_28, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_28_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 29
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_29:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_29, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_29_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_29, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_29_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 30
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_30:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_30, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_30_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_30, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_30_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)      # set all bits
   CSRC(fcsr, x24)      # clear walking 1 in column 31
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_31:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_31, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_31_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_31, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_31_str)
   slli x24, x24, 1      # walk the 1
 
 #if __riscv_xlen == 64
@@ -801,225 +693,193 @@ ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_31:
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 32
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_32:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_32, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_32_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_32, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_32_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 33
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_33:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_33, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_33_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_33, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_33_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 34
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_34:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_34, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_34_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_34, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_34_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 35
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_35:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_35, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_35_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_35, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_35_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 36
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_36:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_36, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_36_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_36, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_36_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 37
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_37:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_37, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_37_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_37, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_37_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 38
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_38:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_38, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_38_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_38, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_38_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 39
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_39:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_39, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_39_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_39, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_39_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 40
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_40:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_40, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_40_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_40, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_40_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 41
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_41:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_41, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_41_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_41, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_41_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 42
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_42:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_42, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_42_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_42, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_42_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 43
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_43:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_43, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_43_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_43, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_43_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 44
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_44:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_44, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_44_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_44, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_44_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 45
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_45:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_45, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_45_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_45, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_45_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 46
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_46:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_46, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_46_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_46, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_46_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 47
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_47:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_47, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_47_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_47, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_47_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 48
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_48:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_48, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_48_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_48, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_48_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 49
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_49:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_49, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_49_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_49, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_49_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 50
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_50:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_50, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_50_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_50, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_50_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 51
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_51:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_51, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_51_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_51, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_51_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 52
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_52:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_52, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_52_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_52, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_52_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 53
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_53:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_53, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_53_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_53, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_53_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 54
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_54:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_54, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_54_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_54, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_54_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 55
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_55:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_55, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_55_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_55, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_55_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 56
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_56:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_56, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_56_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_56, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_56_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 57
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_57:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_57, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_57_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_57, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_57_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 58
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_58:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_58, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_58_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_58, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_58_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 59
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_59:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_59, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_59_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_59, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_59_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 60
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_60:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_60, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_60_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_60, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_60_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 61
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_61:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_61, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_61_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_61, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_61_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 62
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_62:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_62, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_62_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_62, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_62_str)
   slli x24, x24, 1      # walk the 1
 
   CSRW(fcsr, x13)    # set all bits
   CSRC(fcsr, x24)    # clear walking 1 in column 63
 ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_63:
-  # Read fcsr into x9 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_63, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_63_str)
+  # Read fcsr into x9 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x9, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_63, ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_63_str)
   slli x24, x24, 1      # walk the 1
 #endif
 
@@ -1033,225 +893,193 @@ ZicsrF_cg_cp_fcsr_walk_fcsr_clr_bit_63:
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 0
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_0:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_0, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_0_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_0, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_0_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 1
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_1:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_1, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_1_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_1, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_1_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 2
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_2:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_2, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_2_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_2, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_2_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 3
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_3:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_3, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_3_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_3, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_3_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 4
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_4:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_4, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_4_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_4, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_4_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 5
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_5:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_5, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_5_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_5, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_5_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 6
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_6:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_6, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_6_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_6, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_6_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 7
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_7:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_7, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_7_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_7, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_7_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 8
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_8:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_8, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_8_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_8, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_8_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 9
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_9:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_9, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_9_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_9, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_9_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 10
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_10:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_10, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_10_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_10, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_10_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 11
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_11:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_11, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_11_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_11, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_11_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 12
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_12:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_12, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_12_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_12, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_12_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 13
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_13:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_13, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_13_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_13, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_13_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 14
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_14:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_14, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_14_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_14, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_14_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 15
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_15:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_15, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_15_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_15, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_15_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 16
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_16:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_16, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_16_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_16, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_16_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 17
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_17:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_17, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_17_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_17, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_17_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 18
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_18:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_18, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_18_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_18, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_18_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 19
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_19:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_19, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_19_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_19, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_19_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 20
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_20:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_20, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_20_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_20, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_20_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 21
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_21:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_21, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_21_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_21, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_21_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 22
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_22:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_22, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_22_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_22, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_22_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 23
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_23:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_23, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_23_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_23, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_23_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 24
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_24:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_24, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_24_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_24, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_24_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 25
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_25:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_25_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_25_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 26
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_26:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_26, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_26_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_26, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_26_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 27
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_27:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_27, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_27_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_27, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_27_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 28
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_28:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_28, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_28_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_28, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_28_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 29
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_29:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_29, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_29_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_29, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_29_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 30
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_30:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_30, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_30_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_30, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_30_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)     # set walking 1 in column 31
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_31:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_31, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_31_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_31, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_31_str)
   slli x6, x6, 1      # walk the 1
 
 #if __riscv_xlen == 64
@@ -1259,225 +1087,193 @@ ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_31:
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 32
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_32:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_32, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_32_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_32, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_32_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 33
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_33:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_33, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_33_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_33, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_33_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 34
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_34:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_34, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_34_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_34, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_34_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 35
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_35:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_35, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_35_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_35, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_35_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 36
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_36:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_36, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_36_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_36, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_36_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 37
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_37:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_37, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_37_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_37, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_37_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 38
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_38:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_38, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_38_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_38, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_38_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 39
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_39:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_39, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_39_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_39, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_39_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 40
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_40:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_40, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_40_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_40, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_40_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 41
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_41:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_41, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_41_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_41, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_41_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 42
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_42:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_42, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_42_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_42, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_42_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 43
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_43:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_43, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_43_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_43, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_43_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 44
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_44:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_44, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_44_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_44, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_44_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 45
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_45:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_45, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_45_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_45, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_45_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 46
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_46:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_46, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_46_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_46, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_46_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 47
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_47:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_47, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_47_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_47, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_47_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 48
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_48:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_48, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_48_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_48, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_48_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 49
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_49:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_49, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_49_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_49, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_49_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 50
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_50:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_50, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_50_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_50, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_50_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 51
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_51:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_51, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_51_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_51, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_51_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 52
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_52:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_52, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_52_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_52, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_52_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 53
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_53:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_53, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_53_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_53, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_53_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 54
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_54:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_54, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_54_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_54, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_54_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 55
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_55:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_55, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_55_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_55, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_55_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 56
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_56:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_56, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_56_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_56, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_56_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 57
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_57:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_57, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_57_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_57, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_57_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 58
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_58:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_58, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_58_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_58, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_58_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 59
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_59:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_59, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_59_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_59, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_59_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 60
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_60:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_60, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_60_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_60, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_60_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 61
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_61:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_61, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_61_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_61, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_61_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 62
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_62:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_62, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_62_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_62, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_62_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, zero)    # clear all bits
   CSRS(fflags, x6)      # set walking 1 in column 63
 ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_63:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_63, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_63_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_63, ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_63_str)
   slli x6, x6, 1      # walk the 1
 #endif
 
@@ -1486,225 +1282,193 @@ ZicsrF_cg_cp_fcsr_walk_fflags_set_bit_63:
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 0
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_0:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_0, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_0_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_0, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_0_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 1
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_1:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_1, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_1_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_1, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_1_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 2
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_2:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_2, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_2_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_2, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_2_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 3
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_3:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_3, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_3_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_3, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_3_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 4
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_4:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_4, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_4_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_4, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_4_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 5
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_5:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_5, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_5_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_5, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_5_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 6
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_6:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_6, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_6_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_6, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_6_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 7
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_7:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_7, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_7_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_7, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_7_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 8
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_8:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_8, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_8_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_8, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_8_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 9
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_9:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_9, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_9_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_9, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_9_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 10
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_10:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_10, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_10_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_10, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_10_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 11
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_11:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_11, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_11_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_11, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_11_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 12
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_12:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_12, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_12_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_12, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_12_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 13
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_13:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_13, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_13_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_13, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_13_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 14
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_14:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_14, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_14_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_14, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_14_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 15
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_15:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_15, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_15_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_15, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_15_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 16
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_16:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_16, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_16_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_16, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_16_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 17
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_17:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_17, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_17_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_17, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_17_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 18
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_18:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_18, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_18_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_18, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_18_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 19
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_19:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_19, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_19_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_19, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_19_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 20
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_20:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_20, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_20_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_20, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_20_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 21
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_21:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_21, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_21_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_21, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_21_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 22
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_22:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_22, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_22_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_22, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_22_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 23
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_23:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_23, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_23_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_23, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_23_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 24
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_24:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_24, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_24_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_24, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_24_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 25
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_25:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_25_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_25_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 26
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_26:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_26, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_26_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_26, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_26_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 27
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_27:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_27, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_27_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_27, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_27_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 28
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_28:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_28, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_28_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_28, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_28_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 29
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_29:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_29, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_29_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_29, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_29_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 30
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_30:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_30, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_30_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_30, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_30_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)      # set all bits
   CSRC(fflags, x6)      # clear walking 1 in column 31
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_31:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_31, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_31_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_31, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_31_str)
   slli x6, x6, 1      # walk the 1
 
 #if __riscv_xlen == 64
@@ -1712,225 +1476,193 @@ ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_31:
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 32
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_32:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_32, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_32_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_32, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_32_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 33
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_33:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_33, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_33_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_33, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_33_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 34
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_34:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_34, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_34_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_34, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_34_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 35
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_35:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_35, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_35_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_35, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_35_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 36
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_36:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_36, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_36_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_36, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_36_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 37
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_37:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_37, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_37_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_37, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_37_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 38
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_38:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_38, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_38_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_38, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_38_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 39
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_39:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_39, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_39_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_39, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_39_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 40
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_40:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_40, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_40_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_40, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_40_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 41
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_41:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_41, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_41_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_41, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_41_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 42
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_42:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_42, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_42_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_42, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_42_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 43
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_43:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_43, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_43_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_43, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_43_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 44
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_44:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_44, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_44_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_44, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_44_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 45
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_45:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_45, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_45_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_45, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_45_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 46
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_46:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_46, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_46_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_46, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_46_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 47
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_47:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_47, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_47_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_47, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_47_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 48
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_48:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_48, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_48_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_48, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_48_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 49
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_49:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_49, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_49_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_49, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_49_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 50
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_50:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_50, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_50_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_50, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_50_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 51
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_51:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_51, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_51_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_51, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_51_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 52
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_52:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_52, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_52_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_52, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_52_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 53
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_53:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_53, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_53_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_53, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_53_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 54
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_54:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_54, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_54_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_54, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_54_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 55
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_55:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_55, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_55_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_55, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_55_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 56
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_56:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_56, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_56_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_56, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_56_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 57
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_57:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_57, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_57_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_57, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_57_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 58
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_58:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_58, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_58_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_58, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_58_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 59
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_59:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_59, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_59_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_59, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_59_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 60
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_60:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_60, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_60_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_60, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_60_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 61
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_61:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_61, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_61_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_61, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_61_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 62
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_62:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_62, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_62_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_62, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_62_str)
   slli x6, x6, 1      # walk the 1
 
   CSRW(fflags, x19)    # set all bits
   CSRC(fflags, x6)    # clear walking 1 in column 63
 ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_63:
-  # Read fflags into x25 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_63, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_63_str)
+  # Read fflags into x25 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x25, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_63, ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_63_str)
   slli x6, x6, 1      # walk the 1
 #endif
 
@@ -1944,225 +1676,193 @@ ZicsrF_cg_cp_fcsr_walk_fflags_clr_bit_63:
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 0
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_0:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_0, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_0_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_0, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_0_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 1
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_1:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_1, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_1_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_1, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_1_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 2
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_2:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_2, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_2_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_2, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_2_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 3
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_3:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_3, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_3_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_3, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_3_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 4
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_4:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_4, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_4_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_4, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_4_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 5
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_5:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_5, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_5_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_5, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_5_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 6
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_6:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_6, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_6_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_6, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_6_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 7
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_7:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_7, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_7_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_7, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_7_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 8
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_8:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_8, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_8_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_8, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_8_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 9
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_9:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_9, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_9_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_9, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_9_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 10
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_10:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_10, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_10_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_10, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_10_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 11
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_11:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_11_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_11_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 12
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_12:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_12, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_12_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_12, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_12_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 13
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_13:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_13, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_13_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_13, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_13_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 14
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_14:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_14, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_14_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_14, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_14_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 15
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_15:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_15, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_15_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_15, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_15_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 16
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_16:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_16, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_16_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_16, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_16_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 17
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_17:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_17, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_17_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_17, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_17_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 18
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_18:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_18, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_18_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_18, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_18_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 19
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_19:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_19, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_19_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_19, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_19_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 20
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_20:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_20, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_20_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_20, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_20_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 21
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_21:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_21, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_21_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_21, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_21_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 22
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_22:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_22, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_22_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_22, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_22_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 23
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_23:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_23, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_23_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_23, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_23_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 24
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_24:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_24, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_24_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_24, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_24_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 25
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_25:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_25, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_25_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_25, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_25_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 26
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_26:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_26, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_26_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_26, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_26_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 27
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_27:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_27, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_27_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_27, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_27_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 28
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_28:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_28, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_28_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_28, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_28_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 29
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_29:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_29, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_29_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_29, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_29_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 30
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_30:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_30, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_30_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_30, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_30_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)     # set walking 1 in column 31
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_31:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_31, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_31_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_31, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_31_str)
   slli x12, x12, 1      # walk the 1
 
 #if __riscv_xlen == 64
@@ -2170,225 +1870,193 @@ ZicsrF_cg_cp_fcsr_walk_frm_set_bit_31:
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 32
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_32:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_32, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_32_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_32, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_32_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 33
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_33:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_33, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_33_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_33, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_33_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 34
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_34:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_34, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_34_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_34, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_34_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 35
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_35:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_35, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_35_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_35, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_35_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 36
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_36:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_36, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_36_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_36, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_36_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 37
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_37:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_37, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_37_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_37, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_37_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 38
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_38:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_38, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_38_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_38, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_38_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 39
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_39:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_39, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_39_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_39, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_39_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 40
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_40:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_40, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_40_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_40, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_40_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 41
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_41:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_41, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_41_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_41, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_41_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 42
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_42:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_42, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_42_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_42, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_42_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 43
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_43:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_43, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_43_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_43, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_43_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 44
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_44:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_44, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_44_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_44, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_44_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 45
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_45:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_45, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_45_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_45, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_45_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 46
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_46:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_46, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_46_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_46, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_46_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 47
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_47:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_47, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_47_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_47, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_47_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 48
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_48:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_48, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_48_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_48, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_48_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 49
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_49:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_49, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_49_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_49, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_49_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 50
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_50:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_50, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_50_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_50, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_50_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 51
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_51:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_51, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_51_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_51, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_51_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 52
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_52:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_52, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_52_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_52, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_52_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 53
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_53:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_53, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_53_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_53, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_53_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 54
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_54:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_54, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_54_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_54, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_54_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 55
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_55:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_55, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_55_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_55, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_55_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 56
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_56:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_56, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_56_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_56, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_56_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 57
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_57:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_57, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_57_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_57, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_57_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 58
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_58:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_58, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_58_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_58, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_58_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 59
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_59:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_59, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_59_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_59, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_59_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 60
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_60:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_60, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_60_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_60, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_60_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 61
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_61:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_61, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_61_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_61, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_61_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 62
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_62:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_62, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_62_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_62, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_62_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, zero)    # clear all bits
   CSRS(frm, x12)      # set walking 1 in column 63
 ZicsrF_cg_cp_fcsr_walk_frm_set_bit_63:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_63, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_63_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_63, ZicsrF_cg_cp_fcsr_walk_frm_set_bit_63_str)
   slli x12, x12, 1      # walk the 1
 #endif
 
@@ -2397,225 +2065,193 @@ ZicsrF_cg_cp_fcsr_walk_frm_set_bit_63:
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 0
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_0:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_0, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_0_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_0, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_0_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 1
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_1:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_1, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_1_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_1, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_1_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 2
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_2:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_2, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_2_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_2, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_2_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 3
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_3:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_3, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_3_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_3, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_3_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 4
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_4:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_4, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_4_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_4, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_4_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 5
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_5:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_5, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_5_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_5, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_5_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 6
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_6:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_6, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_6_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_6, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_6_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 7
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_7:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_7, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_7_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_7, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_7_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 8
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_8:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_8, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_8_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_8, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_8_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 9
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_9:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_9, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_9_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_9, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_9_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 10
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_10:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_10, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_10_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_10, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_10_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 11
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_11:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_11_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_11_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 12
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_12:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_12, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_12_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_12, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_12_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 13
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_13:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_13, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_13_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_13, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_13_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 14
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_14:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_14, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_14_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_14, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_14_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 15
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_15:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_15, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_15_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_15, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_15_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 16
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_16:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_16, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_16_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_16, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_16_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 17
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_17:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_17, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_17_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_17, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_17_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 18
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_18:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_18, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_18_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_18, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_18_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 19
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_19:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_19, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_19_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_19, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_19_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 20
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_20:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_20, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_20_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_20, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_20_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 21
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_21:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_21, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_21_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_21, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_21_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 22
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_22:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_22, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_22_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_22, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_22_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 23
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_23:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_23, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_23_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_23, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_23_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 24
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_24:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_24, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_24_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_24, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_24_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 25
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_25:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_25, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_25_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_25, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_25_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 26
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_26:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_26, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_26_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_26, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_26_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 27
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_27:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_27, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_27_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_27, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_27_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 28
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_28:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_28, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_28_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_28, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_28_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 29
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_29:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_29, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_29_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_29, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_29_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 30
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_30:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_30, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_30_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_30, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_30_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)      # set all bits
   CSRC(frm, x12)      # clear walking 1 in column 31
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_31:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_31, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_31_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_31, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_31_str)
   slli x12, x12, 1      # walk the 1
 
 #if __riscv_xlen == 64
@@ -2623,225 +2259,193 @@ ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_31:
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 32
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_32:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_32, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_32_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_32, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_32_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 33
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_33:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_33, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_33_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_33, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_33_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 34
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_34:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_34, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_34_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_34, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_34_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 35
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_35:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_35, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_35_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_35, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_35_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 36
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_36:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_36, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_36_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_36, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_36_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 37
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_37:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_37, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_37_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_37, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_37_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 38
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_38:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_38, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_38_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_38, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_38_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 39
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_39:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_39, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_39_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_39, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_39_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 40
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_40:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_40, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_40_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_40, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_40_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 41
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_41:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_41, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_41_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_41, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_41_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 42
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_42:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_42, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_42_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_42, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_42_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 43
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_43:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_43, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_43_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_43, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_43_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 44
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_44:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_44, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_44_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_44, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_44_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 45
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_45:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_45, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_45_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_45, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_45_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 46
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_46:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_46, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_46_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_46, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_46_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 47
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_47:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_47, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_47_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_47, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_47_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 48
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_48:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_48, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_48_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_48, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_48_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 49
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_49:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_49, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_49_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_49, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_49_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 50
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_50:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_50, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_50_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_50, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_50_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 51
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_51:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_51, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_51_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_51, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_51_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 52
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_52:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_52, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_52_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_52, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_52_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 53
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_53:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_53, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_53_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_53, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_53_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 54
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_54:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_54, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_54_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_54, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_54_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 55
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_55:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_55, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_55_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_55, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_55_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 56
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_56:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_56, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_56_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_56, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_56_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 57
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_57:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_57, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_57_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_57, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_57_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 58
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_58:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_58, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_58_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_58, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_58_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 59
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_59:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_59, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_59_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_59, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_59_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 60
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_60:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_60, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_60_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_60, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_60_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 61
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_61:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_61, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_61_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_61, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_61_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 62
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_62:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_62, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_62_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_62, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_62_str)
   slli x12, x12, 1      # walk the 1
 
   CSRW(frm, x15)    # set all bits
   CSRC(frm, x12)    # clear walking 1 in column 63
 ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_63:
-  # Read frm into x11 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_63, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_63_str)
+  # Read frm into x11 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x11, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_63, ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_63_str)
   slli x12, x12, 1      # walk the 1
 #endif
 
@@ -2856,66 +2460,50 @@ ZicsrF_cg_cp_fcsr_walk_frm_clr_bit_63:
 # Testcase: write 000 to fcsr.FRM
   LI(x20, 0)           # write value 0
 ZicsrF_cg_cp_fcsr_frm_write_b_0:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_0, ZicsrF_cg_cp_fcsr_frm_write_b_0_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_0, ZicsrF_cg_cp_fcsr_frm_write_b_0_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_0, ZicsrF_cg_cp_fcsr_frm_write_b_0_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_0, ZicsrF_cg_cp_fcsr_frm_write_b_0_str)
 
 # Testcase: write 001 to fcsr.FRM
   LI(x20, 32)           # write value 32
 ZicsrF_cg_cp_fcsr_frm_write_b_1:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_1, ZicsrF_cg_cp_fcsr_frm_write_b_1_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_1, ZicsrF_cg_cp_fcsr_frm_write_b_1_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_1, ZicsrF_cg_cp_fcsr_frm_write_b_1_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_1, ZicsrF_cg_cp_fcsr_frm_write_b_1_str)
 
 # Testcase: write 010 to fcsr.FRM
   LI(x20, 64)           # write value 64
 ZicsrF_cg_cp_fcsr_frm_write_b_2:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_2, ZicsrF_cg_cp_fcsr_frm_write_b_2_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_2, ZicsrF_cg_cp_fcsr_frm_write_b_2_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_2, ZicsrF_cg_cp_fcsr_frm_write_b_2_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_2, ZicsrF_cg_cp_fcsr_frm_write_b_2_str)
 
 # Testcase: write 011 to fcsr.FRM
   LI(x20, 96)           # write value 96
 ZicsrF_cg_cp_fcsr_frm_write_b_3:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_3, ZicsrF_cg_cp_fcsr_frm_write_b_3_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_3, ZicsrF_cg_cp_fcsr_frm_write_b_3_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_3, ZicsrF_cg_cp_fcsr_frm_write_b_3_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_3, ZicsrF_cg_cp_fcsr_frm_write_b_3_str)
 
 # Testcase: write 100 to fcsr.FRM
   LI(x20, 128)           # write value 128
 ZicsrF_cg_cp_fcsr_frm_write_b_4:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_4, ZicsrF_cg_cp_fcsr_frm_write_b_4_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_4, ZicsrF_cg_cp_fcsr_frm_write_b_4_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_4, ZicsrF_cg_cp_fcsr_frm_write_b_4_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_4, ZicsrF_cg_cp_fcsr_frm_write_b_4_str)
 
 # Testcase: write 101 to fcsr.FRM
   LI(x20, 160)           # write value 160
 ZicsrF_cg_cp_fcsr_frm_write_b_5:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_5, ZicsrF_cg_cp_fcsr_frm_write_b_5_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_5, ZicsrF_cg_cp_fcsr_frm_write_b_5_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_5, ZicsrF_cg_cp_fcsr_frm_write_b_5_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_5, ZicsrF_cg_cp_fcsr_frm_write_b_5_str)
 
 # Testcase: write 110 to fcsr.FRM
   LI(x20, 192)           # write value 192
 ZicsrF_cg_cp_fcsr_frm_write_b_6:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_6, ZicsrF_cg_cp_fcsr_frm_write_b_6_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_6, ZicsrF_cg_cp_fcsr_frm_write_b_6_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_6, ZicsrF_cg_cp_fcsr_frm_write_b_6_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_6, ZicsrF_cg_cp_fcsr_frm_write_b_6_str)
 
 # Testcase: write 111 to fcsr.FRM
   LI(x20, 224)           # write value 224
 ZicsrF_cg_cp_fcsr_frm_write_b_7:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_7, ZicsrF_cg_cp_fcsr_frm_write_b_7_str)
-  # Read frm into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_7, ZicsrF_cg_cp_fcsr_frm_write_b_7_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_frm_write_b_7, ZicsrF_cg_cp_fcsr_frm_write_b_7_str)
+  # Read frm into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(frm, x20, ZicsrF_cg_cp_fcsr_frm_write_b_7, ZicsrF_cg_cp_fcsr_frm_write_b_7_str)
 
 
 /////////////////////////////////
@@ -2926,258 +2514,194 @@ ZicsrF_cg_cp_fcsr_frm_write_b_7:
 # Testcase: write 00000 to fcsr.FFLAGS
   LI(x20, 0)           # write value 0
 ZicsrF_cg_cp_fcsr_fflags_write_b_0:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_0, ZicsrF_cg_cp_fcsr_fflags_write_b_0_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_0, ZicsrF_cg_cp_fcsr_fflags_write_b_0_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_0, ZicsrF_cg_cp_fcsr_fflags_write_b_0_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_0, ZicsrF_cg_cp_fcsr_fflags_write_b_0_str)
 
 # Testcase: write 00001 to fcsr.FFLAGS
   LI(x20, 1)           # write value 1
 ZicsrF_cg_cp_fcsr_fflags_write_b_1:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_1, ZicsrF_cg_cp_fcsr_fflags_write_b_1_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_1, ZicsrF_cg_cp_fcsr_fflags_write_b_1_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_1, ZicsrF_cg_cp_fcsr_fflags_write_b_1_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_1, ZicsrF_cg_cp_fcsr_fflags_write_b_1_str)
 
 # Testcase: write 00010 to fcsr.FFLAGS
   LI(x20, 2)           # write value 2
 ZicsrF_cg_cp_fcsr_fflags_write_b_2:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_2, ZicsrF_cg_cp_fcsr_fflags_write_b_2_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_2, ZicsrF_cg_cp_fcsr_fflags_write_b_2_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_2, ZicsrF_cg_cp_fcsr_fflags_write_b_2_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_2, ZicsrF_cg_cp_fcsr_fflags_write_b_2_str)
 
 # Testcase: write 00011 to fcsr.FFLAGS
   LI(x20, 3)           # write value 3
 ZicsrF_cg_cp_fcsr_fflags_write_b_3:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_3, ZicsrF_cg_cp_fcsr_fflags_write_b_3_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_3, ZicsrF_cg_cp_fcsr_fflags_write_b_3_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_3, ZicsrF_cg_cp_fcsr_fflags_write_b_3_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_3, ZicsrF_cg_cp_fcsr_fflags_write_b_3_str)
 
 # Testcase: write 00100 to fcsr.FFLAGS
   LI(x20, 4)           # write value 4
 ZicsrF_cg_cp_fcsr_fflags_write_b_4:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_4, ZicsrF_cg_cp_fcsr_fflags_write_b_4_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_4, ZicsrF_cg_cp_fcsr_fflags_write_b_4_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_4, ZicsrF_cg_cp_fcsr_fflags_write_b_4_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_4, ZicsrF_cg_cp_fcsr_fflags_write_b_4_str)
 
 # Testcase: write 00101 to fcsr.FFLAGS
   LI(x20, 5)           # write value 5
 ZicsrF_cg_cp_fcsr_fflags_write_b_5:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_5, ZicsrF_cg_cp_fcsr_fflags_write_b_5_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_5, ZicsrF_cg_cp_fcsr_fflags_write_b_5_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_5, ZicsrF_cg_cp_fcsr_fflags_write_b_5_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_5, ZicsrF_cg_cp_fcsr_fflags_write_b_5_str)
 
 # Testcase: write 00110 to fcsr.FFLAGS
   LI(x20, 6)           # write value 6
 ZicsrF_cg_cp_fcsr_fflags_write_b_6:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_6, ZicsrF_cg_cp_fcsr_fflags_write_b_6_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_6, ZicsrF_cg_cp_fcsr_fflags_write_b_6_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_6, ZicsrF_cg_cp_fcsr_fflags_write_b_6_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_6, ZicsrF_cg_cp_fcsr_fflags_write_b_6_str)
 
 # Testcase: write 00111 to fcsr.FFLAGS
   LI(x20, 7)           # write value 7
 ZicsrF_cg_cp_fcsr_fflags_write_b_7:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_7, ZicsrF_cg_cp_fcsr_fflags_write_b_7_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_7, ZicsrF_cg_cp_fcsr_fflags_write_b_7_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_7, ZicsrF_cg_cp_fcsr_fflags_write_b_7_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_7, ZicsrF_cg_cp_fcsr_fflags_write_b_7_str)
 
 # Testcase: write 01000 to fcsr.FFLAGS
   LI(x20, 8)           # write value 8
 ZicsrF_cg_cp_fcsr_fflags_write_b_8:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_8, ZicsrF_cg_cp_fcsr_fflags_write_b_8_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_8, ZicsrF_cg_cp_fcsr_fflags_write_b_8_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_8, ZicsrF_cg_cp_fcsr_fflags_write_b_8_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_8, ZicsrF_cg_cp_fcsr_fflags_write_b_8_str)
 
 # Testcase: write 01001 to fcsr.FFLAGS
   LI(x20, 9)           # write value 9
 ZicsrF_cg_cp_fcsr_fflags_write_b_9:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_9, ZicsrF_cg_cp_fcsr_fflags_write_b_9_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_9, ZicsrF_cg_cp_fcsr_fflags_write_b_9_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_9, ZicsrF_cg_cp_fcsr_fflags_write_b_9_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_9, ZicsrF_cg_cp_fcsr_fflags_write_b_9_str)
 
 # Testcase: write 01010 to fcsr.FFLAGS
   LI(x20, 10)           # write value 10
 ZicsrF_cg_cp_fcsr_fflags_write_b_10:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_10, ZicsrF_cg_cp_fcsr_fflags_write_b_10_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_10, ZicsrF_cg_cp_fcsr_fflags_write_b_10_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_10, ZicsrF_cg_cp_fcsr_fflags_write_b_10_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_10, ZicsrF_cg_cp_fcsr_fflags_write_b_10_str)
 
 # Testcase: write 01011 to fcsr.FFLAGS
   LI(x20, 11)           # write value 11
 ZicsrF_cg_cp_fcsr_fflags_write_b_11:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_11, ZicsrF_cg_cp_fcsr_fflags_write_b_11_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_11, ZicsrF_cg_cp_fcsr_fflags_write_b_11_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_11, ZicsrF_cg_cp_fcsr_fflags_write_b_11_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_11, ZicsrF_cg_cp_fcsr_fflags_write_b_11_str)
 
 # Testcase: write 01100 to fcsr.FFLAGS
   LI(x20, 12)           # write value 12
 ZicsrF_cg_cp_fcsr_fflags_write_b_12:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_12, ZicsrF_cg_cp_fcsr_fflags_write_b_12_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_12, ZicsrF_cg_cp_fcsr_fflags_write_b_12_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_12, ZicsrF_cg_cp_fcsr_fflags_write_b_12_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_12, ZicsrF_cg_cp_fcsr_fflags_write_b_12_str)
 
 # Testcase: write 01101 to fcsr.FFLAGS
   LI(x20, 13)           # write value 13
 ZicsrF_cg_cp_fcsr_fflags_write_b_13:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_13, ZicsrF_cg_cp_fcsr_fflags_write_b_13_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_13, ZicsrF_cg_cp_fcsr_fflags_write_b_13_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_13, ZicsrF_cg_cp_fcsr_fflags_write_b_13_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_13, ZicsrF_cg_cp_fcsr_fflags_write_b_13_str)
 
 # Testcase: write 01110 to fcsr.FFLAGS
   LI(x20, 14)           # write value 14
 ZicsrF_cg_cp_fcsr_fflags_write_b_14:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_14, ZicsrF_cg_cp_fcsr_fflags_write_b_14_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_14, ZicsrF_cg_cp_fcsr_fflags_write_b_14_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_14, ZicsrF_cg_cp_fcsr_fflags_write_b_14_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_14, ZicsrF_cg_cp_fcsr_fflags_write_b_14_str)
 
 # Testcase: write 01111 to fcsr.FFLAGS
   LI(x20, 15)           # write value 15
 ZicsrF_cg_cp_fcsr_fflags_write_b_15:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_15, ZicsrF_cg_cp_fcsr_fflags_write_b_15_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_15, ZicsrF_cg_cp_fcsr_fflags_write_b_15_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_15, ZicsrF_cg_cp_fcsr_fflags_write_b_15_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_15, ZicsrF_cg_cp_fcsr_fflags_write_b_15_str)
 
 # Testcase: write 10000 to fcsr.FFLAGS
   LI(x20, 16)           # write value 16
 ZicsrF_cg_cp_fcsr_fflags_write_b_16:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_16, ZicsrF_cg_cp_fcsr_fflags_write_b_16_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_16, ZicsrF_cg_cp_fcsr_fflags_write_b_16_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_16, ZicsrF_cg_cp_fcsr_fflags_write_b_16_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_16, ZicsrF_cg_cp_fcsr_fflags_write_b_16_str)
 
 # Testcase: write 10001 to fcsr.FFLAGS
   LI(x20, 17)           # write value 17
 ZicsrF_cg_cp_fcsr_fflags_write_b_17:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_17, ZicsrF_cg_cp_fcsr_fflags_write_b_17_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_17, ZicsrF_cg_cp_fcsr_fflags_write_b_17_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_17, ZicsrF_cg_cp_fcsr_fflags_write_b_17_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_17, ZicsrF_cg_cp_fcsr_fflags_write_b_17_str)
 
 # Testcase: write 10010 to fcsr.FFLAGS
   LI(x20, 18)           # write value 18
 ZicsrF_cg_cp_fcsr_fflags_write_b_18:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_18, ZicsrF_cg_cp_fcsr_fflags_write_b_18_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_18, ZicsrF_cg_cp_fcsr_fflags_write_b_18_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_18, ZicsrF_cg_cp_fcsr_fflags_write_b_18_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_18, ZicsrF_cg_cp_fcsr_fflags_write_b_18_str)
 
 # Testcase: write 10011 to fcsr.FFLAGS
   LI(x20, 19)           # write value 19
 ZicsrF_cg_cp_fcsr_fflags_write_b_19:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_19, ZicsrF_cg_cp_fcsr_fflags_write_b_19_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_19, ZicsrF_cg_cp_fcsr_fflags_write_b_19_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_19, ZicsrF_cg_cp_fcsr_fflags_write_b_19_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_19, ZicsrF_cg_cp_fcsr_fflags_write_b_19_str)
 
 # Testcase: write 10100 to fcsr.FFLAGS
   LI(x20, 20)           # write value 20
 ZicsrF_cg_cp_fcsr_fflags_write_b_20:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_20, ZicsrF_cg_cp_fcsr_fflags_write_b_20_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_20, ZicsrF_cg_cp_fcsr_fflags_write_b_20_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_20, ZicsrF_cg_cp_fcsr_fflags_write_b_20_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_20, ZicsrF_cg_cp_fcsr_fflags_write_b_20_str)
 
 # Testcase: write 10101 to fcsr.FFLAGS
   LI(x20, 21)           # write value 21
 ZicsrF_cg_cp_fcsr_fflags_write_b_21:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_21, ZicsrF_cg_cp_fcsr_fflags_write_b_21_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_21, ZicsrF_cg_cp_fcsr_fflags_write_b_21_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_21, ZicsrF_cg_cp_fcsr_fflags_write_b_21_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_21, ZicsrF_cg_cp_fcsr_fflags_write_b_21_str)
 
 # Testcase: write 10110 to fcsr.FFLAGS
   LI(x20, 22)           # write value 22
 ZicsrF_cg_cp_fcsr_fflags_write_b_22:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_22, ZicsrF_cg_cp_fcsr_fflags_write_b_22_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_22, ZicsrF_cg_cp_fcsr_fflags_write_b_22_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_22, ZicsrF_cg_cp_fcsr_fflags_write_b_22_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_22, ZicsrF_cg_cp_fcsr_fflags_write_b_22_str)
 
 # Testcase: write 10111 to fcsr.FFLAGS
   LI(x20, 23)           # write value 23
 ZicsrF_cg_cp_fcsr_fflags_write_b_23:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_23, ZicsrF_cg_cp_fcsr_fflags_write_b_23_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_23, ZicsrF_cg_cp_fcsr_fflags_write_b_23_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_23, ZicsrF_cg_cp_fcsr_fflags_write_b_23_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_23, ZicsrF_cg_cp_fcsr_fflags_write_b_23_str)
 
 # Testcase: write 11000 to fcsr.FFLAGS
   LI(x20, 24)           # write value 24
 ZicsrF_cg_cp_fcsr_fflags_write_b_24:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_24, ZicsrF_cg_cp_fcsr_fflags_write_b_24_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_24, ZicsrF_cg_cp_fcsr_fflags_write_b_24_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_24, ZicsrF_cg_cp_fcsr_fflags_write_b_24_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_24, ZicsrF_cg_cp_fcsr_fflags_write_b_24_str)
 
 # Testcase: write 11001 to fcsr.FFLAGS
   LI(x20, 25)           # write value 25
 ZicsrF_cg_cp_fcsr_fflags_write_b_25:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_25, ZicsrF_cg_cp_fcsr_fflags_write_b_25_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_25, ZicsrF_cg_cp_fcsr_fflags_write_b_25_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_25, ZicsrF_cg_cp_fcsr_fflags_write_b_25_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_25, ZicsrF_cg_cp_fcsr_fflags_write_b_25_str)
 
 # Testcase: write 11010 to fcsr.FFLAGS
   LI(x20, 26)           # write value 26
 ZicsrF_cg_cp_fcsr_fflags_write_b_26:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_26, ZicsrF_cg_cp_fcsr_fflags_write_b_26_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_26, ZicsrF_cg_cp_fcsr_fflags_write_b_26_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_26, ZicsrF_cg_cp_fcsr_fflags_write_b_26_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_26, ZicsrF_cg_cp_fcsr_fflags_write_b_26_str)
 
 # Testcase: write 11011 to fcsr.FFLAGS
   LI(x20, 27)           # write value 27
 ZicsrF_cg_cp_fcsr_fflags_write_b_27:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_27, ZicsrF_cg_cp_fcsr_fflags_write_b_27_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_27, ZicsrF_cg_cp_fcsr_fflags_write_b_27_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_27, ZicsrF_cg_cp_fcsr_fflags_write_b_27_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_27, ZicsrF_cg_cp_fcsr_fflags_write_b_27_str)
 
 # Testcase: write 11100 to fcsr.FFLAGS
   LI(x20, 28)           # write value 28
 ZicsrF_cg_cp_fcsr_fflags_write_b_28:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_28, ZicsrF_cg_cp_fcsr_fflags_write_b_28_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_28, ZicsrF_cg_cp_fcsr_fflags_write_b_28_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_28, ZicsrF_cg_cp_fcsr_fflags_write_b_28_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_28, ZicsrF_cg_cp_fcsr_fflags_write_b_28_str)
 
 # Testcase: write 11101 to fcsr.FFLAGS
   LI(x20, 29)           # write value 29
 ZicsrF_cg_cp_fcsr_fflags_write_b_29:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_29, ZicsrF_cg_cp_fcsr_fflags_write_b_29_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_29, ZicsrF_cg_cp_fcsr_fflags_write_b_29_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_29, ZicsrF_cg_cp_fcsr_fflags_write_b_29_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_29, ZicsrF_cg_cp_fcsr_fflags_write_b_29_str)
 
 # Testcase: write 11110 to fcsr.FFLAGS
   LI(x20, 30)           # write value 30
 ZicsrF_cg_cp_fcsr_fflags_write_b_30:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_30, ZicsrF_cg_cp_fcsr_fflags_write_b_30_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_30, ZicsrF_cg_cp_fcsr_fflags_write_b_30_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_30, ZicsrF_cg_cp_fcsr_fflags_write_b_30_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_30, ZicsrF_cg_cp_fcsr_fflags_write_b_30_str)
 
 # Testcase: write 11111 to fcsr.FFLAGS
   LI(x20, 31)           # write value 31
 ZicsrF_cg_cp_fcsr_fflags_write_b_31:
-  # Write x20 to fcsr, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_31, ZicsrF_cg_cp_fcsr_fflags_write_b_31_str)
-  # Read fflags into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_31, ZicsrF_cg_cp_fcsr_fflags_write_b_31_str)
+  # Write x20 to fcsr, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fcsr, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_31, ZicsrF_cg_cp_fcsr_fflags_write_b_31_str)
+  # Read fflags into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fflags, x20, ZicsrF_cg_cp_fcsr_fflags_write_b_31, ZicsrF_cg_cp_fcsr_fflags_write_b_31_str)
 
 
 /////////////////////////////////
@@ -3188,66 +2712,50 @@ ZicsrF_cg_cp_fcsr_fflags_write_b_31:
 # Testcase: write 000 to frm
   LI(x20, 0)           # write value 0
 ZicsrF_cg_cp_frm_write_b_0:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_0, ZicsrF_cg_cp_frm_write_b_0_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_0, ZicsrF_cg_cp_frm_write_b_0_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_0, ZicsrF_cg_cp_frm_write_b_0_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_0, ZicsrF_cg_cp_frm_write_b_0_str)
 
 # Testcase: write 001 to frm
   LI(x20, 1)           # write value 1
 ZicsrF_cg_cp_frm_write_b_1:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_1, ZicsrF_cg_cp_frm_write_b_1_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_1, ZicsrF_cg_cp_frm_write_b_1_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_1, ZicsrF_cg_cp_frm_write_b_1_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_1, ZicsrF_cg_cp_frm_write_b_1_str)
 
 # Testcase: write 010 to frm
   LI(x20, 2)           # write value 2
 ZicsrF_cg_cp_frm_write_b_2:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_2, ZicsrF_cg_cp_frm_write_b_2_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_2, ZicsrF_cg_cp_frm_write_b_2_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_2, ZicsrF_cg_cp_frm_write_b_2_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_2, ZicsrF_cg_cp_frm_write_b_2_str)
 
 # Testcase: write 011 to frm
   LI(x20, 3)           # write value 3
 ZicsrF_cg_cp_frm_write_b_3:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_3, ZicsrF_cg_cp_frm_write_b_3_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_3, ZicsrF_cg_cp_frm_write_b_3_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_3, ZicsrF_cg_cp_frm_write_b_3_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_3, ZicsrF_cg_cp_frm_write_b_3_str)
 
 # Testcase: write 100 to frm
   LI(x20, 4)           # write value 4
 ZicsrF_cg_cp_frm_write_b_4:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_4, ZicsrF_cg_cp_frm_write_b_4_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_4, ZicsrF_cg_cp_frm_write_b_4_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_4, ZicsrF_cg_cp_frm_write_b_4_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_4, ZicsrF_cg_cp_frm_write_b_4_str)
 
 # Testcase: write 101 to frm
   LI(x20, 5)           # write value 5
 ZicsrF_cg_cp_frm_write_b_5:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_5, ZicsrF_cg_cp_frm_write_b_5_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_5, ZicsrF_cg_cp_frm_write_b_5_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_5, ZicsrF_cg_cp_frm_write_b_5_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_5, ZicsrF_cg_cp_frm_write_b_5_str)
 
 # Testcase: write 110 to frm
   LI(x20, 6)           # write value 6
 ZicsrF_cg_cp_frm_write_b_6:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_6, ZicsrF_cg_cp_frm_write_b_6_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_6, ZicsrF_cg_cp_frm_write_b_6_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_6, ZicsrF_cg_cp_frm_write_b_6_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_6, ZicsrF_cg_cp_frm_write_b_6_str)
 
 # Testcase: write 111 to frm
   LI(x20, 7)           # write value 7
 ZicsrF_cg_cp_frm_write_b_7:
-  # Write x20 to frm, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_7, ZicsrF_cg_cp_frm_write_b_7_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_7, ZicsrF_cg_cp_frm_write_b_7_str)
+  # Write x20 to frm, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(frm, x20, ZicsrF_cg_cp_frm_write_b_7, ZicsrF_cg_cp_frm_write_b_7_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_frm_write_b_7, ZicsrF_cg_cp_frm_write_b_7_str)
 
 
 /////////////////////////////////
@@ -3258,258 +2766,194 @@ ZicsrF_cg_cp_frm_write_b_7:
 # Testcase: write 00000 to fflags
   LI(x20, 0)           # write value 0
 ZicsrF_cg_cp_fflags_write_b_0:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_0, ZicsrF_cg_cp_fflags_write_b_0_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_0, ZicsrF_cg_cp_fflags_write_b_0_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_0, ZicsrF_cg_cp_fflags_write_b_0_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_0, ZicsrF_cg_cp_fflags_write_b_0_str)
 
 # Testcase: write 00001 to fflags
   LI(x20, 1)           # write value 1
 ZicsrF_cg_cp_fflags_write_b_1:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_1, ZicsrF_cg_cp_fflags_write_b_1_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_1, ZicsrF_cg_cp_fflags_write_b_1_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_1, ZicsrF_cg_cp_fflags_write_b_1_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_1, ZicsrF_cg_cp_fflags_write_b_1_str)
 
 # Testcase: write 00010 to fflags
   LI(x20, 2)           # write value 2
 ZicsrF_cg_cp_fflags_write_b_2:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_2, ZicsrF_cg_cp_fflags_write_b_2_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_2, ZicsrF_cg_cp_fflags_write_b_2_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_2, ZicsrF_cg_cp_fflags_write_b_2_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_2, ZicsrF_cg_cp_fflags_write_b_2_str)
 
 # Testcase: write 00011 to fflags
   LI(x20, 3)           # write value 3
 ZicsrF_cg_cp_fflags_write_b_3:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_3, ZicsrF_cg_cp_fflags_write_b_3_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_3, ZicsrF_cg_cp_fflags_write_b_3_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_3, ZicsrF_cg_cp_fflags_write_b_3_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_3, ZicsrF_cg_cp_fflags_write_b_3_str)
 
 # Testcase: write 00100 to fflags
   LI(x20, 4)           # write value 4
 ZicsrF_cg_cp_fflags_write_b_4:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_4, ZicsrF_cg_cp_fflags_write_b_4_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_4, ZicsrF_cg_cp_fflags_write_b_4_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_4, ZicsrF_cg_cp_fflags_write_b_4_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_4, ZicsrF_cg_cp_fflags_write_b_4_str)
 
 # Testcase: write 00101 to fflags
   LI(x20, 5)           # write value 5
 ZicsrF_cg_cp_fflags_write_b_5:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_5, ZicsrF_cg_cp_fflags_write_b_5_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_5, ZicsrF_cg_cp_fflags_write_b_5_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_5, ZicsrF_cg_cp_fflags_write_b_5_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_5, ZicsrF_cg_cp_fflags_write_b_5_str)
 
 # Testcase: write 00110 to fflags
   LI(x20, 6)           # write value 6
 ZicsrF_cg_cp_fflags_write_b_6:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_6, ZicsrF_cg_cp_fflags_write_b_6_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_6, ZicsrF_cg_cp_fflags_write_b_6_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_6, ZicsrF_cg_cp_fflags_write_b_6_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_6, ZicsrF_cg_cp_fflags_write_b_6_str)
 
 # Testcase: write 00111 to fflags
   LI(x20, 7)           # write value 7
 ZicsrF_cg_cp_fflags_write_b_7:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_7, ZicsrF_cg_cp_fflags_write_b_7_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_7, ZicsrF_cg_cp_fflags_write_b_7_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_7, ZicsrF_cg_cp_fflags_write_b_7_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_7, ZicsrF_cg_cp_fflags_write_b_7_str)
 
 # Testcase: write 01000 to fflags
   LI(x20, 8)           # write value 8
 ZicsrF_cg_cp_fflags_write_b_8:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_8, ZicsrF_cg_cp_fflags_write_b_8_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_8, ZicsrF_cg_cp_fflags_write_b_8_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_8, ZicsrF_cg_cp_fflags_write_b_8_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_8, ZicsrF_cg_cp_fflags_write_b_8_str)
 
 # Testcase: write 01001 to fflags
   LI(x20, 9)           # write value 9
 ZicsrF_cg_cp_fflags_write_b_9:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_9, ZicsrF_cg_cp_fflags_write_b_9_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_9, ZicsrF_cg_cp_fflags_write_b_9_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_9, ZicsrF_cg_cp_fflags_write_b_9_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_9, ZicsrF_cg_cp_fflags_write_b_9_str)
 
 # Testcase: write 01010 to fflags
   LI(x20, 10)           # write value 10
 ZicsrF_cg_cp_fflags_write_b_10:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_10, ZicsrF_cg_cp_fflags_write_b_10_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_10, ZicsrF_cg_cp_fflags_write_b_10_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_10, ZicsrF_cg_cp_fflags_write_b_10_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_10, ZicsrF_cg_cp_fflags_write_b_10_str)
 
 # Testcase: write 01011 to fflags
   LI(x20, 11)           # write value 11
 ZicsrF_cg_cp_fflags_write_b_11:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_11, ZicsrF_cg_cp_fflags_write_b_11_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_11, ZicsrF_cg_cp_fflags_write_b_11_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_11, ZicsrF_cg_cp_fflags_write_b_11_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_11, ZicsrF_cg_cp_fflags_write_b_11_str)
 
 # Testcase: write 01100 to fflags
   LI(x20, 12)           # write value 12
 ZicsrF_cg_cp_fflags_write_b_12:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_12, ZicsrF_cg_cp_fflags_write_b_12_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_12, ZicsrF_cg_cp_fflags_write_b_12_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_12, ZicsrF_cg_cp_fflags_write_b_12_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_12, ZicsrF_cg_cp_fflags_write_b_12_str)
 
 # Testcase: write 01101 to fflags
   LI(x20, 13)           # write value 13
 ZicsrF_cg_cp_fflags_write_b_13:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_13, ZicsrF_cg_cp_fflags_write_b_13_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_13, ZicsrF_cg_cp_fflags_write_b_13_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_13, ZicsrF_cg_cp_fflags_write_b_13_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_13, ZicsrF_cg_cp_fflags_write_b_13_str)
 
 # Testcase: write 01110 to fflags
   LI(x20, 14)           # write value 14
 ZicsrF_cg_cp_fflags_write_b_14:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_14, ZicsrF_cg_cp_fflags_write_b_14_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_14, ZicsrF_cg_cp_fflags_write_b_14_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_14, ZicsrF_cg_cp_fflags_write_b_14_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_14, ZicsrF_cg_cp_fflags_write_b_14_str)
 
 # Testcase: write 01111 to fflags
   LI(x20, 15)           # write value 15
 ZicsrF_cg_cp_fflags_write_b_15:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_15, ZicsrF_cg_cp_fflags_write_b_15_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_15, ZicsrF_cg_cp_fflags_write_b_15_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_15, ZicsrF_cg_cp_fflags_write_b_15_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_15, ZicsrF_cg_cp_fflags_write_b_15_str)
 
 # Testcase: write 10000 to fflags
   LI(x20, 16)           # write value 16
 ZicsrF_cg_cp_fflags_write_b_16:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_16, ZicsrF_cg_cp_fflags_write_b_16_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_16, ZicsrF_cg_cp_fflags_write_b_16_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_16, ZicsrF_cg_cp_fflags_write_b_16_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_16, ZicsrF_cg_cp_fflags_write_b_16_str)
 
 # Testcase: write 10001 to fflags
   LI(x20, 17)           # write value 17
 ZicsrF_cg_cp_fflags_write_b_17:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_17, ZicsrF_cg_cp_fflags_write_b_17_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_17, ZicsrF_cg_cp_fflags_write_b_17_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_17, ZicsrF_cg_cp_fflags_write_b_17_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_17, ZicsrF_cg_cp_fflags_write_b_17_str)
 
 # Testcase: write 10010 to fflags
   LI(x20, 18)           # write value 18
 ZicsrF_cg_cp_fflags_write_b_18:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_18, ZicsrF_cg_cp_fflags_write_b_18_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_18, ZicsrF_cg_cp_fflags_write_b_18_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_18, ZicsrF_cg_cp_fflags_write_b_18_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_18, ZicsrF_cg_cp_fflags_write_b_18_str)
 
 # Testcase: write 10011 to fflags
   LI(x20, 19)           # write value 19
 ZicsrF_cg_cp_fflags_write_b_19:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_19, ZicsrF_cg_cp_fflags_write_b_19_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_19, ZicsrF_cg_cp_fflags_write_b_19_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_19, ZicsrF_cg_cp_fflags_write_b_19_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_19, ZicsrF_cg_cp_fflags_write_b_19_str)
 
 # Testcase: write 10100 to fflags
   LI(x20, 20)           # write value 20
 ZicsrF_cg_cp_fflags_write_b_20:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_20, ZicsrF_cg_cp_fflags_write_b_20_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_20, ZicsrF_cg_cp_fflags_write_b_20_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_20, ZicsrF_cg_cp_fflags_write_b_20_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_20, ZicsrF_cg_cp_fflags_write_b_20_str)
 
 # Testcase: write 10101 to fflags
   LI(x20, 21)           # write value 21
 ZicsrF_cg_cp_fflags_write_b_21:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_21, ZicsrF_cg_cp_fflags_write_b_21_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_21, ZicsrF_cg_cp_fflags_write_b_21_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_21, ZicsrF_cg_cp_fflags_write_b_21_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_21, ZicsrF_cg_cp_fflags_write_b_21_str)
 
 # Testcase: write 10110 to fflags
   LI(x20, 22)           # write value 22
 ZicsrF_cg_cp_fflags_write_b_22:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_22, ZicsrF_cg_cp_fflags_write_b_22_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_22, ZicsrF_cg_cp_fflags_write_b_22_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_22, ZicsrF_cg_cp_fflags_write_b_22_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_22, ZicsrF_cg_cp_fflags_write_b_22_str)
 
 # Testcase: write 10111 to fflags
   LI(x20, 23)           # write value 23
 ZicsrF_cg_cp_fflags_write_b_23:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_23, ZicsrF_cg_cp_fflags_write_b_23_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_23, ZicsrF_cg_cp_fflags_write_b_23_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_23, ZicsrF_cg_cp_fflags_write_b_23_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_23, ZicsrF_cg_cp_fflags_write_b_23_str)
 
 # Testcase: write 11000 to fflags
   LI(x20, 24)           # write value 24
 ZicsrF_cg_cp_fflags_write_b_24:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_24, ZicsrF_cg_cp_fflags_write_b_24_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_24, ZicsrF_cg_cp_fflags_write_b_24_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_24, ZicsrF_cg_cp_fflags_write_b_24_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_24, ZicsrF_cg_cp_fflags_write_b_24_str)
 
 # Testcase: write 11001 to fflags
   LI(x20, 25)           # write value 25
 ZicsrF_cg_cp_fflags_write_b_25:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_25, ZicsrF_cg_cp_fflags_write_b_25_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_25, ZicsrF_cg_cp_fflags_write_b_25_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_25, ZicsrF_cg_cp_fflags_write_b_25_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_25, ZicsrF_cg_cp_fflags_write_b_25_str)
 
 # Testcase: write 11010 to fflags
   LI(x20, 26)           # write value 26
 ZicsrF_cg_cp_fflags_write_b_26:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_26, ZicsrF_cg_cp_fflags_write_b_26_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_26, ZicsrF_cg_cp_fflags_write_b_26_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_26, ZicsrF_cg_cp_fflags_write_b_26_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_26, ZicsrF_cg_cp_fflags_write_b_26_str)
 
 # Testcase: write 11011 to fflags
   LI(x20, 27)           # write value 27
 ZicsrF_cg_cp_fflags_write_b_27:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_27, ZicsrF_cg_cp_fflags_write_b_27_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_27, ZicsrF_cg_cp_fflags_write_b_27_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_27, ZicsrF_cg_cp_fflags_write_b_27_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_27, ZicsrF_cg_cp_fflags_write_b_27_str)
 
 # Testcase: write 11100 to fflags
   LI(x20, 28)           # write value 28
 ZicsrF_cg_cp_fflags_write_b_28:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_28, ZicsrF_cg_cp_fflags_write_b_28_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_28, ZicsrF_cg_cp_fflags_write_b_28_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_28, ZicsrF_cg_cp_fflags_write_b_28_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_28, ZicsrF_cg_cp_fflags_write_b_28_str)
 
 # Testcase: write 11101 to fflags
   LI(x20, 29)           # write value 29
 ZicsrF_cg_cp_fflags_write_b_29:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_29, ZicsrF_cg_cp_fflags_write_b_29_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_29, ZicsrF_cg_cp_fflags_write_b_29_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_29, ZicsrF_cg_cp_fflags_write_b_29_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_29, ZicsrF_cg_cp_fflags_write_b_29_str)
 
 # Testcase: write 11110 to fflags
   LI(x20, 30)           # write value 30
 ZicsrF_cg_cp_fflags_write_b_30:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_30, ZicsrF_cg_cp_fflags_write_b_30_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_30, ZicsrF_cg_cp_fflags_write_b_30_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_30, ZicsrF_cg_cp_fflags_write_b_30_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_30, ZicsrF_cg_cp_fflags_write_b_30_str)
 
 # Testcase: write 11111 to fflags
   LI(x20, 31)           # write value 31
 ZicsrF_cg_cp_fflags_write_b_31:
-  # Write x20 to fflags, read back and check against expected.
-  RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_31, ZicsrF_cg_cp_fflags_write_b_31_str)
-  # Read fcsr into x20 and check against expected.
-  RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_31, ZicsrF_cg_cp_fflags_write_b_31_str)
+  # Write x20 to fflags, read back and check against expected.RVTEST_SIGUPD_CSR_WRITE(fflags, x20, ZicsrF_cg_cp_fflags_write_b_31, ZicsrF_cg_cp_fflags_write_b_31_str)
+  # Read fcsr into x20 and check against expected.RVTEST_SIGUPD_CSR_READ(fcsr, x20, ZicsrF_cg_cp_fflags_write_b_31, ZicsrF_cg_cp_fflags_write_b_31_str)
 
 
 /////////////////////////////////
