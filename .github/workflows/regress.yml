@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v7
@@ -34,7 +34,7 @@ jobs:
       configs: ${{ steps.find.outputs.configs }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Find all sail configs
         id: find
@@ -54,7 +54,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v7
@@ -112,7 +112,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install Dependencies
         run: |
@@ -212,7 +212,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install Dependencies
         run: |
@@ -286,7 +286,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v7
@@ -298,7 +298,7 @@ jobs:
     name: Build CTP
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v7
@@ -312,7 +312,7 @@ jobs:
     name: Build CRD
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - run: git submodule update --init docs/docs-resources
 
